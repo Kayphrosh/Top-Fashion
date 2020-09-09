@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Encode+Sans+Condensed:wght@500&family=Great+Vibes&family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Encode Sans Condensed', sans-serif;
+    overflow: hidden;
+    line-height: 1.6;
+    font-size: 16px;
+    background: #f9faf5;
+    color: #f4f4f4;
+}
+/* links */
+li {
+    list-style: none;
+}
+a, a:active, a:hover, a:focus{
+    outline: 0; 
+    border: none;
+}
+.sm-icon {
+    display: flex;
+    flex-direction: row;
+    word-spacing: 0px;
+    letter-spacing: 1px;
+    padding: 0;
+    
+}
+#sm a{
+    font-size: 30px;
+    padding: 10px 20px;
+    color: #968621;
+    margin: 0;
+}
+#sm a:hover{
+    color: bisque;
+}
+#sm {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -5vh;
+    padding-top: 40px;
+}
+#follow {
+    font-family: 'Graduate', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    align-content: center;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-bottom: -30px;
+    padding: 0;
+    color: honeydew;
+}
+.send {
+    font-family: 'Graduate', cursive;
+    margin-top: 5px;
+    padding: 15px 10px;
+    background: #797878;
+    color: #f4f4f4;
+    font-size: 12px;
+    align-content: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+.send:hover {
+    background: #bbb8b8;
+    color: #464646;
+    border: none;
+    outline: 0;
+}
+.send:focus {
+    border: none;
+    outline: none;
+}
+#sign-in {
+    color: #bb0606;
+
+}
+
+/*  SHOWCASE  */
+.showcase {
+    background: url(./showcase4.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background:transparent;
+    align-items: center;
+    transition: ease-in 1s;
+    overflow:  hidden;
+    position: absolute;
+    right: 50%;
+    bottom: 30% ;
+    transform: translate(50%, 30%);
+    flex-basis: 70%;
+    padding-top: 80px;
+}
+.content h3{
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-size: 600;
+    text-align: center;
+    color: #64778d;
+    font-family: 'Berkshire Swash', cursive;
+}
+.content p{
+    padding: 20px 0;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin: 0;
+
+}
+.image-showcase{
+    margin-top: 0px;
+    width: 80px;
+    position: relative;
+} 
+
+/* SIDEBAR NAV */
+.navbar {
+    width: 250px;
+    height: 100%;
+    left: 0; 
+    top: 0;
+    flex-basis: 30%;
+    position: absolute;
+    pointer-events: none;
+    overflow: hidden;
+ 
+}
+.navbar header{
+    display: none;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    line-height: 80px;  
+    user-select: none;
+
+}
+.hello h4{
+    float: right;
+    position: absolute;
+    right: 0%;
+    transform: translate(-10%);
+    margin-top: 25px;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+.navbar .abc {
+    padding-top: 70px;
+}
+.navbar a{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: block;
+    line-height: 75px;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 20px 30px;
+    
+}
+.navbar a:hover {
+    padding-left: 20px;
+    color: blue;
+}
+.line {
+    width: 30px;
+    height: 5px;
+    background: #ebeaea;;
+    margin: 5px;
+}
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    left: 30px;
+    top:  22px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.navbar.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+
+}
+.navbar li {
+    opacity: 0;
+    overflow: hidden;
+}
+.navbar li a{
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    overflow: hidden;
+    align-items: center;
+}
+.navbar li :nth-child(1){
+    transition: all 0.5s ease 0.2s;
+
+}
+.navbar li :nth-child(2){
+    transition: all 0.5s ease 0.4s;
+
+}
+.navbar li :nth-child(3){
+    transition: all 0.5s ease 0.6s;
+
+}
+li.fade {
+    opacity: 1;
+}
+
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+
+}
+
+.toggle .line2{
+    opacity: 0;
+    
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+
+}
+
+
+/* CARD */
+.card-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    padding: 40px;
+    overflow: hidden;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    gap: 20px;
+    width: 1500px;
+    overflow: hidden;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.6);
+}
+.card-header img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    min-height: 100px;
+    background: #f1e6c1;
+    margin: 0;
+    color: #000000;
+    align-content: center;
+}
+.card-body h4 {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    padding-bottom: 20px;
+}
+.tag {
+    color: #968621;
+    letter-spacing: 1.5px;
+    padding-bottom: 10px;
+}
+
+.card-icon {
+    display: flex;
+    flex-direction: row;
+
+}
+.card-icon a{
+    color: rgb(223, 23, 23);
+    font-size: 20px ;
+    padding: 10px 30px
+}
+.card-icon a:hover{
+    color:  #968621;
+}
+
+footer {
+    background: cadetblue;
+    text-align: center;
+    height: fit-content;
+    padding-top: 20px;
+}
+footer #design {
+    margin-top: 40px;
+}
+footer p{
+    font-family: 'Graduate', cursive;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-style: italic;
+    padding: 10px 0;
+}
+@media (max-width: 940px) {
+    .card-container {
+        grid-template-columns: 2fr;
+    }
+    .card-header img{
+        height: 600px;
+    }
+    .card-section{
+        height: fit-content;
+        padding: 10px;
+    }
+}
