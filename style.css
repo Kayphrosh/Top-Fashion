@@ -94,6 +94,9 @@ a, a:active, a:hover, a:focus {
     border: none;
     outline: 0;
 }
+.send:focus {
+    outline: none;
+}
 #sign-in {
     color: #ee1818;
 }
