@@ -19,12 +19,24 @@ body {
     color: #f4f4f4;
 }
 /* links */
+.noSelect { 
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+    -khtml-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+    -webkit-tap-highlight-color: transparent; 
+}
 li {
     list-style: none;
 }
-a, a:active, a:hover, a:focus{
+a, a:active, a:hover, a:focus {
     outline: 0; 
     border: none;
+    padding: 0;
+    background-color: transparent;
+    background: none;
 }
 .sm-icon {
     display: flex;
@@ -42,6 +54,9 @@ a, a:active, a:hover, a:focus{
 }
 #sm a:hover{
     color: bisque;
+}
+#sm a:clicked {
+    background: none;
 }
 #sm {
     display: flex;
@@ -79,18 +94,13 @@ a, a:active, a:hover, a:focus{
     border: none;
     outline: 0;
 }
-.send:focus {
-    border: none;
-    outline: none;
-}
 #sign-in {
     color: #ee1818;
-
 }
 
 /*  SHOWCASE  */
 .showcase {
-    background: url(./showcase6.jpg) no-repeat center center/cover;
+    background: url(./showcase1.jpg) no-repeat center center/cover;
     display: flex;
     justify-content: space-between;
     margin: 0;
@@ -219,6 +229,12 @@ a, a:active, a:hover, a:focus{
     overflow: hidden;
     align-items: center;
 }
+.navbar li a:focus {
+    background: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
 .navbar li :nth-child(1){
     transition: all 0.5s ease 0.2s;
 
@@ -258,7 +274,7 @@ li.fade {
     align-items: center;
     justify-content: center;
     height: fit-content;
-    padding: 40px;
+    padding: 30px;
     overflow: hidden;
 }
 .card-container {
@@ -273,6 +289,7 @@ li.fade {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.6);
+    margin: 20px 10px;
 }
 .card-header img{
     width: 100%;
