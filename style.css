@@ -62,22 +62,24 @@ a, a:active, a:hover, a:focus {
     display: flex;
     flex-direction: column;
     height: fit-content;
-    /* padding-top: 30px; */
+    padding-top: 0px;
+    float: right;
 }
 #follow {
     font-family: 'Graduate', cursive;
     font-size: 20px;
     font-weight: 400;
-    align-content: center;
+    text-align: center;
     letter-spacing: 1px;
-    margin-top: 30px;
+    margin-top: 10px;
     height: fit-content;
     padding: 0;
     color: honeydew;
 }
 .send {
     font-family: 'Graduate', cursive;
-    margin-top: 5px;
+    margin-top: 20px;
+    margin-left: 25%;
     padding: 15px 10px;
     background: #797878;
     color: #f4f4f4;
@@ -108,27 +110,47 @@ a, a:active, a:hover, a:focus {
     padding: 0;
     width: 100%;
     align-content: center;
-    min-height: fit-content;
     height: 100vh;
     overflow: hidden;
 }
-
+/* 
 .content {
-    display: flex;
-    flex-direction: column;
     background:transparent;
-    align-items: center;
     align-content: center;
     transition: ease-in 1s;
+    width: 50%;
     overflow:  hidden;
-    position: relative;
-    right: 50%;
-    transform: translate(50%);
+
     flex-basis: 70%;
     margin-top: 100px;
     height: fit-content;
+} */
+.content {
+    padding: 35px; 
+    background-color:transparent;
+    width: fit-content;
+    align-content: center;
+    transition: ease-in 1s;
+    margin-top: 20vh;
+    margin-left: 35%;
+    justify-content: center;
+    overflow:  hidden;
+    border-radius: 10px;
 }
 .content h3{
+    font-family: 'Berkshire Swash', cursive;
+    letter-spacing: 1px;
+    font-size: 24px;
+    color: #64778d;
+    font-weight: 600;
+    text-align: center;
+}
+.content p{
+    padding: 20px 0;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+/* .content h3{
     letter-spacing: 1px;
     font-size: 22px;
     font-size: 600;
@@ -143,11 +165,13 @@ a, a:active, a:hover, a:focus {
     font-size: 18px;
     margin: 0;
 
-}
+} */
 .image-showcase{
     margin-top: 0px;
+    margin-left: 35%;
     width: 80px;
     position: relative;
+    align-items: center;
 } 
 
 /* SIDEBAR NAV */
@@ -368,8 +392,24 @@ footer p{
         height: fit-content;
         padding: 10px;
     }
+    .content {
+        margin-left: 20%;
+        margin-top: 20vh;
+        padding: 15px;
+    }
+    .content p{
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    .content h3{
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    #sm {
+        padding-top: 50px;
+    }
 }
-@media (min-width: 1000px) {
+/* @media (min-width: 1000px) {
     .content {
         right: 50%;
         transform: translate(50%);
@@ -392,4 +432,4 @@ footer p{
         padding: 20px;
         font-size: 16px;
     }
-}
+} */
