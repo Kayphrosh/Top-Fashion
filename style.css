@@ -366,8 +366,9 @@ footer p{
 @media (min-width: 1000px) {
     .content {
         right: 50%;
-        bottom: 0% ;
-        transform: translate(50%, 00%);
+        top: 5% ;
+        transform: translate(50%, -10%);
+        height: fit-content;
     }
     .content img {
         width: 120px;
