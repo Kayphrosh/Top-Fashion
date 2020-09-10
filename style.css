@@ -48,7 +48,7 @@ a, a:active, a:hover, a:focus {
 }
 #sm a{
     font-size: 30px;
-    padding: 10px 20px;
+    padding: 0px 20px;
     color: #968621;
     margin: 0;
 }
@@ -62,7 +62,7 @@ a, a:active, a:hover, a:focus {
     display: flex;
     flex-direction: column;
     height: fit-content;
-    padding-top: 40px;
+    /* padding-top: 30px; */
 }
 #follow {
     font-family: 'Graduate', cursive;
@@ -104,8 +104,6 @@ a, a:active, a:hover, a:focus {
 /*  SHOWCASE  */
 .showcase {
     background: url(./showcase1.jpg) no-repeat center center/cover;
-    display: flex;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -120,13 +118,14 @@ a, a:active, a:hover, a:focus {
     flex-direction: column;
     background:transparent;
     align-items: center;
+    align-content: center;
     transition: ease-in 1s;
     overflow:  hidden;
     position: relative;
     right: 50%;
     transform: translate(50%);
     flex-basis: 70%;
-    margin-top: 70px;
+    margin-top: 100px;
     height: fit-content;
 }
 .content h3{
@@ -386,9 +385,8 @@ footer p{
     .content p {
         font-size: 22px;
     }
-    #sm a {
-        font-size: 40px;
-        padding-bottom: 30px;
+    #sm a 
+
     }
     .send {
         padding: 20px;
