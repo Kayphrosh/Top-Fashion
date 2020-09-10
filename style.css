@@ -109,7 +109,6 @@ a, a:active, a:hover, a:focus {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
     min-height: fit-content;
     overflow: hidden;
 }
@@ -123,12 +122,10 @@ a, a:active, a:hover, a:focus {
     overflow:  hidden;
     position: relative;
     right: 50%;
-    bottom: 30% ;
-    transform: translate(50%, 30%);
+    transform: translate(50%);
     flex-basis: 70%;
     padding-top: 80px;
     min-height: max-content;
-    overflow: hidden;
 }
 .content h3{
     letter-spacing: 1px;
@@ -373,8 +370,7 @@ footer p{
 @media (min-width: 1000px) {
     .content {
         right: 50%;
-        top: 5% ;
-        transform: translate(50%, -10%);
+        transform: translate(50%);
         height: fit-content;
     }
     .content img {
