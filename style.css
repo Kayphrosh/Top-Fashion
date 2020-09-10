@@ -50,7 +50,7 @@ a, a:active, a:hover, a:focus {
     font-size: 30px;
     padding: 10px 20px;
     color: #968621;
-    margin: 0;
+    margin-top: 0px;
 }
 #sm a:hover{
     color: bisque;
@@ -58,7 +58,7 @@ a, a:active, a:hover, a:focus {
 #sm {
     display: flex;
     flex-direction: column;
-    margin-bottom: -5vh;
+    margin-bottom: 0vh;
     padding-top: 40px;
 }
 #follow {
@@ -121,22 +121,22 @@ a, a:active, a:hover, a:focus {
     position: relative;
     height: fit-content;
     right: 50%;
-    /* bottom: 30% ; */
-    transform: translate(50%, 30%);
+    /* bottom: 0% ; */
+    transform: translate(50%, 20%);
     flex-basis: 70%;
     /* padding-top: 80px; */
 }
 .content h3{
-    letter-spacing: 1px;
-    font-size: 22px;
+    letter-spacing: 1.5px;
+    font-size: 28px;
     font-size: 600;
     text-align: center;
     color: #64778d;
     font-family: 'Berkshire Swash', cursive;
 }
 .content p{
-    padding: 20px 0;
-    letter-spacing: 1px;
+    padding: 24px 0;
+    letter-spacing: 1.5px;
     font-size: 18px;
     margin: 0;
 
