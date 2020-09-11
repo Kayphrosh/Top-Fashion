@@ -48,9 +48,10 @@ a, a:active, a:hover, a:focus, {
 }
 #sm a{
     font-size: 30px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     color: #968621;
     margin-top: 0px;
+    margin: none;
 }
 #sm a:hover{
     color: bisque;
