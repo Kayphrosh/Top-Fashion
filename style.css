@@ -338,6 +338,34 @@ li.fade {
     color:  #968621;
 }
 
+.about {
+    text-align: center;
+    color: #000;
+    padding: 30px;
+}
+.brand {
+    margin-top: -30px;
+    flex-basis: 30%;
+}
+.about div {
+    padding: 20px 0px;
+}
+.about h2 {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+.iconify {
+    font-size: 60px;
+    color: #64778d;
+}
+
+.explore {
+    color: #000;
+    text-align: center;
+    font-size: 28px;
+}
+
+
 footer {
     background: #121313;
     text-align: center;
@@ -354,7 +382,7 @@ footer p{
     font-style: italic;
     padding: 10px 0;
 }
-@media (max-width: 940px) {
+@media (max-width: 760px) {
     .card-container {
         grid-template-columns: 2fr;
     }
@@ -366,4 +394,12 @@ footer p{
         padding: 10px;
     }
 
+} 
+@media (min-width: 760px) {
+    .brand {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-basis: 33%;
+    }
 }
