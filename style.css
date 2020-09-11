@@ -141,7 +141,7 @@ a, a:active, a:hover, a:focus, {
     height: fit-content;
     right: 50%;
     /* bottom: 0% ; */
-    transform: translate(50%, 30%);
+    transform: translate(50%, 25%);
     flex-basis: 70%;
     /* padding-top: 80px; */
 }
