@@ -354,7 +354,7 @@ li.fade {
     font-size: 28px;
     letter-spacing: 1px;
 }
-.iconify {
+.about-icon .iconify {
     font-size: 60px;
     color: #64778d;
 }
@@ -367,20 +367,35 @@ li.fade {
 
 
 footer {
-    background: #121313;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background: #434444;
     text-align: center;
     height: fit-content;
     padding-top: 20px;
 }
 footer #design {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 footer p{
-    font-family: 'Graduate', cursive;
     font-size: 14px;
     letter-spacing: 1px;
     font-style: italic;
     padding: 10px 0;
+}
+.footer-contact {
+    text-align: center;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    margin-top: 0;
+}
+.footer-contact p{
+    font-weight: 100;
+    padding: 0;
+    margin:0;
+}
+.atm-icon {
+    font-size: 30px;
+    padding: 5px 0px;
 }
 @media (max-width: 760px) {
     .card-container {
