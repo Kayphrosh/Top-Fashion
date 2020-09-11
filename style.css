@@ -364,6 +364,9 @@ li.fade {
     text-align: center;
     font-size: 28px;
 }
+.brand h4{
+    padding-bottom: 10px;
+}
 
 
 footer {
@@ -381,6 +384,7 @@ footer p{
     letter-spacing: 1px;
     font-style: italic;
     padding: 10px 0;
+    align-content: center;
 }
 .footer-contact {
     text-align: center;
@@ -410,11 +414,11 @@ footer p{
     }
 
 } 
-@media (min-width: 760px) {
+@media (min-width: 860px) {
     .brand {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-basis: 33%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        box-sizing: border-box;
     }
 }
