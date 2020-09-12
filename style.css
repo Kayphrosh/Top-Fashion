@@ -446,12 +446,9 @@ footer p{
 } 
 @media (min-width: 860px) {
     .brand {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        box-sizing: border-box;
+        margin:  0 250px;
     }
     .abt p {
-        margin:  0 200px;
+        margin:  0 150px;
     }
 }
