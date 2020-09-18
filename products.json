@@ -1,0 +1,70 @@
+
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Vintage",
+        "price": 10.99,
+        "image": { "fields": { "file": { "url": "./images/Top-11.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "Fashion",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "./images/Top-11.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Fashion",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "./images/Top-10.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "Fashion",
+        "price": 22.99,
+        "image": { "fields": { "file": { "url": "./images/Top-9.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "Fashion",
+        "price": 88.99,
+        "image": { "fields": { "file": { "url": "./images/Top-10.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "Vintage",
+        "price": 32.99,
+        "image": { "fields": { "file": { "url": "./images/Top-9.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "Vintage",
+        "price": 45.99,
+        "image": { "fields": { "file": { "url": "./images/Top-11.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "Fashion",
+        "price": 33.99,
+        "image": { "fields": { "file": { "url": "./images/Top-10.jpeg" } } }
+      }
+    }
+  ]
+}
+
