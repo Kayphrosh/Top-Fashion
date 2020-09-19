@@ -427,7 +427,7 @@ li.fade{
 }
 .card-body h4{
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
 }
 .card-body h3{
     font-weight: 700;
@@ -437,7 +437,8 @@ li.fade{
 .card-body h2{
     font-weight: 700;
     padding-left: 5px;
-    font-size: 14px;
+    font-size: 22px;
+    letter-spacing: 1.5px;
     text-align: left;
 }
 .bag-btn {
@@ -486,6 +487,11 @@ footer #design {
 fas fa-window-close {
     font-size: 30px;
     font-weight: 100;
+}
+@media (max-width: 690px) {
+    .products-container{
+        padding: 0px 30px; 
+    }
 }
 @media (max-width: 760px) {
 
@@ -576,8 +582,8 @@ fas fa-window-close {
 .transparentBcg {
     visibility: visible;
 }
-.close-cart {
-    font-size: 1.7rem;
+.close-cart-btn {
+    font-size: 2rem;
     cursor: pointer;
 }
 .cart h2 {
@@ -615,10 +621,18 @@ fas fa-window-close {
     height: 75px;
 }
 .cart-item h4 {
-    font-size: 0.85rem;
+    font-size: 16px;
     text-transform: capitalize;
+    letter-spacing: 1px;
 }
 .item-amount {
     text-align: center;
+    font-size: 20px;
+
+}
+.remove-item{
+    color: #d61f1f;
+    text-transform: lowercase;
+
 }
 /* END OF CART ITEM */
