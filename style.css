@@ -97,20 +97,20 @@ a, a:active, a:hover, a:focus {
     font-family: 'Encode Sans Condensed', sans-serif;
     margin-top: 20px;
     padding: 15px 70px;
-    background: transparent;
+    background: #968621;
     color: #d6d3d3;
     font-size: 14px;
     letter-spacing: 1px;
     align-content: center;
-    border: 1px solid #f4f4f4;
     border-radius: 10px;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     overflow: hidden;
 }
 .send:hover {
-    background: #968621;
+    background: transparent;
     color: #000000;
+    border: 1px solid #f4f4f4;
 }
 .send:focus{
     border: none;
