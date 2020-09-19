@@ -106,6 +106,7 @@ a, a:active, a:hover, a:focus {
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     overflow: hidden;
+    border: none;
 }
 .send:hover {
     background: transparent;
@@ -113,8 +114,9 @@ a, a:active, a:hover, a:focus {
     border: 1px solid #f4f4f4;
 }
 .send:focus{
-    border: none;
+    border: 1px solid #f4f4f4;
     outline: none;
+    background: transparent;
 }
 
 /* SHOPING CART */
