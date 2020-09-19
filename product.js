@@ -53,7 +53,7 @@ class UI {
                     <div class="card-body">
                         <h2>${product.title}</h2>
                         <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
-                        <h3>${product.price}</h3>
+                        <h3>$${product.price}</h3>
                         <div class="card-icon">
                             <i class="far fa-heart" style="font-size: 22px;"></i>
                             <i class="fas fa-paper-plane" style="font-size: 22px;"></i>
@@ -120,9 +120,9 @@ class UI {
                                 <span class="remove-item" data-id=${item.id}>Remove</span>
                             </div>
                             <div>
-                                <i class="fas fa-chevron-up" data-id=${item.id} style="color:#da1717; cursor: pointer;"></i>
-                                <p class="item-amount">${item.amount}</p>
-                                <i class="fas fa-chevron-down" data-id=${item.id} style="color: #da1717; cursor: pointer;"></i>
+                                <i class="fas fa-chevron-up" data-id=${item.id} style="color:#f4f4f4; font-size: 20px; cursor: pointer;"></i>
+                                <p class="item-amount">${item.amount} </p>
+                                <i class="fas fa-chevron-down" data-id=${item.id} style="color: red; font-size: 20px; cursor: pointer;"></i>
                             </div>
         `;
         cartContent.appendChild(div);
