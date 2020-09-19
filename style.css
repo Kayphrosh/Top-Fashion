@@ -102,7 +102,7 @@ a, a:active, a:hover, a:focus {
     font-size: 14px;
     letter-spacing: 1px;
     align-content: center;
-    border: 1px solid black;
+    border: 1px solid #f4f4f4;
     border-radius: 10px;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -187,8 +187,6 @@ a, a:active, a:hover, a:focus {
     overflow: hidden;
     padding-bottom: 5px;
     margin-bottom: 5px;
-    border-bottom: solid #f4f4f4 1px;
-    border-bottom-left-radius: 20px;
 }
 .content p{
     padding-top: 5px;
