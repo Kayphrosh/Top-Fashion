@@ -110,7 +110,7 @@ a, a:active, a:hover, a:focus {
 }
 .send:hover {
     background: transparent;
-    color: #000000;
+    color: #f4f4f4;
     border: 1px solid #f4f4f4;
 }
 .send:focus{
