@@ -141,7 +141,7 @@ a, a:active, a:hover, a:focus {
 }
  /* SHOWCASE/ HEADER/ CONTENT/ NAV BAR/ HAMBURGER */
 .showcase {
-    background: url(./showcase.jpg) center center/cover no-repeat;
+    background: url(./showcase10.jpg) center center/cover no-repeat;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
