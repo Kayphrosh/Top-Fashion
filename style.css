@@ -187,7 +187,7 @@ a, a:active, a:hover, a:focus {
     overflow: hidden;
     padding-bottom: 5px;
     margin-bottom: 5px;
-    border-bottom: solid #3b3b3b 1px;
+    border-bottom: solid #f4f4f4 1px;
     border-bottom-left-radius: 20px;
 }
 .content p{
