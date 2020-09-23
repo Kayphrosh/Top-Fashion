@@ -129,7 +129,7 @@ a, a:active, a:hover, a:focus {
     align-self: center;
     letter-spacing: 3px;
 }
-.navbar a:hover {
+.navbar a:hover, .a:focus {
     border-bottom: #968621 2px solid;
     padding-left: 20px;
     color: #968621;
