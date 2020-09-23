@@ -14,12 +14,12 @@ html {
   }
 
 body {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Encode Sans Condensed', sans-serif;
     overflow-x: hidden;
     line-height: 1.6;
-    font-size: 20px;
+    font-size: 16px;
     background: #f4f4f4;
-    color: #000000;
+    color: #333333;
 }
 
 .noSelect { 
@@ -76,6 +76,7 @@ a, a:active, a:hover, a:focus {
     border-radius: 5px;
     border: 1px rgb(132, 133, 132) solid;
     box-sizing: border-box;
+    margin-right: 5px;
 }
 .sign-in:hover {
     background-color: #968621;
@@ -162,13 +163,13 @@ a, a:active, a:hover, a:focus {
 }
 .cart-items {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 10px;
+    right: 6px;
     color: #f4f4f4;
     background-color:  #968621;
     padding: 0px 5px;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .content {
@@ -184,7 +185,7 @@ a, a:active, a:hover, a:focus {
     font-size: 28px;
     font-weight: 900;
     text-align: center;
-    color:#bfb46b;
+    color:#ffea73;
     font-family: 'Playfair Display SC', serif;
     overflow: hidden;
     padding-bottom: 15px;
@@ -216,6 +217,7 @@ a, a:active, a:hover, a:focus {
     font-size: 28px;
     letter-spacing: 2px;
     font-weight: 400;
+    color: #f4f4f4;
 }
 .sm-icon {
     display: flex;
@@ -264,7 +266,7 @@ a, a:active, a:hover, a:focus {
     transition: ease 2s;
 }
 .navbar li a{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: normal;
     overflow: hidden;
 }
@@ -318,6 +320,7 @@ transform: rotate(45deg) translate(-5px,-6px);
     font-size: 24px;
     letter-spacing: 2px;
     text-align: center;
+    font-weight: 600;
 }
 .abt p{
     text-align: center;
@@ -325,7 +328,7 @@ transform: rotate(45deg) translate(-5px,-6px);
     align-items: center;
     font-weight: 100;
     letter-spacing: 0.5px;
-    font-size: 18px;
+    font-size: 16px;
 }
 .about-icon .iconify {
     font-size: 40px;
@@ -333,23 +336,19 @@ transform: rotate(45deg) translate(-5px,-6px);
     text-align: center;
 }
 
-.explore {
-    color: #000;
-    text-align: center;
-    font-size: 24px;
-}
 .brand {
     text-align: center;
+    box-sizing: border-box;
 }
 .brand h4{
     padding-bottom: 10px;
-    font-size: 20px;
-    letter-spacing: 2px;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 .brand p{
     font-weight: 100;
     letter-spacing: 0.5px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /*--------------- END OF ABOUT SECTION ---------*/
@@ -363,6 +362,7 @@ transform: rotate(45deg) translate(-5px,-6px);
     text-align: center;
     font-size: 24px;
     padding-bottom: 20px;
+    font-weight: 400;
 }
 .products-container {
     display: grid;
@@ -425,6 +425,7 @@ transform: rotate(45deg) translate(-5px,-6px);
     border-radius: 5px;
     padding: 8px 10px;
     cursor: pointer;
+    color: #f4f4f4;
 }
 .bag-btn:hover {
     background-color: #e03b3b;
@@ -461,40 +462,8 @@ footer #design {
 }
 
 /*--------------- END OF MAIN FOOTER SECTION ---------*/
-fas fa-window-close {
-    font-size: 30px;
-    font-weight: 100;
-}
-@media (max-width: 690px) {
-    .products-container{
-        padding: 0px 25px; 
-    }
-}
-@media (max-width: 760px) {
 
-    .cart {
-        width: 60%;
-    }
-    .cart h2 {
-        font-size: 24px;
-    }
-    .send {
-        padding: 10px 50px;
-        color: #000000;
-    }
-    
-}
-@media (min-width: 768px) {
-    .abt p{
-        padding: 0 250px;
-    }
-    .brand {
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-    }
 
-}
 /*------------- CART SECTION ---------------*/
 .cart-body {
     position: fixed;
@@ -529,6 +498,10 @@ fas fa-window-close {
 .close-cart-btn {
     font-size: 2rem;
     cursor: pointer;
+}
+fas fa-window-close {
+    font-size: 30px;
+    font-weight: 100;
 }
 .cart h2 {
     text-align: center;
@@ -580,3 +553,29 @@ fas fa-window-close {
 
 }
 /* END OF CART ITEM */
+@media (max-width: 690px) {
+    .products-container{
+        padding: 0px 20px; 
+    }
+}
+@media (max-width: 760px) {
+    .cart {
+        width: 60%;
+    }
+    .cart h2 {
+        font-size: 24px;
+    }
+
+    
+}
+@media (min-width: 768px) {
+    .abt p{
+        padding: 0 150px;
+    }
+    .brand {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+}

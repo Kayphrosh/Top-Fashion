@@ -122,7 +122,7 @@ class UI {
                             <div>
                                 <i class="fas fa-chevron-up" data-id=${item.id} style="color:#f4f4f4; font-size: 20px; cursor: pointer;"></i>
                                 <p class="item-amount">${item.amount} </p>
-                                <i class="fas fa-chevron-down" data-id=${item.id} style="color: red; font-size: 20px; cursor: pointer;"></i>
+                                <i class="fas fa-chevron-down" data-id=${item.id} style="color: #f4f4f4; font-size: 20px; cursor: pointer;"></i>
                             </div>
         `;
         cartContent.appendChild(div);
