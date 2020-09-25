@@ -97,7 +97,6 @@ a, a:active, a:hover, a:focus {
     width: 100%;
     margin: 0;
     padding: 0;
-
 }
 .box-1 {
     display: flex;
@@ -604,10 +603,14 @@ fas fa-window-close {
     height: 100vh;
     box-sizing: border-box;
 }
+#showc {
+    background: url(./form-showcase.jpg) center/cover no-repeat;
+    overflow: hidden;
+
+}
 .form-container {
     width: 100%;
     align-items: center;
-    padding-top: 70px;
 }
 form {
     display: flex;
@@ -660,9 +663,8 @@ form small {
     color: #f5f5f5;
 }
 .sign-up-sm {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    float: right;
+    align-self: flex-end;
 }
 .sign-up-sm p {
     font-weight: 200px;

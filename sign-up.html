@@ -10,49 +10,53 @@
     <link rel="stylesheet" href="style.css">
     <title>Sign-Up</title>
 </head>
-<body>
-    <section class="signup-container" id="container">
-        <div>
-            <nav class="container box-1">
-                <!-- <img  class="image-showcase" src="/logo.png" alt=""> -->
-                <div class="hamburger">
-                    <div class="line line1"></div>
-                    <div class="line line2"></div>
-                    <div class="line line3"></div>
-                </div> 
+<body class="noSelect">
+    <header>
+        <section>
+            <div class="showcase" id="showc">
                 <div>
-                    <ul class="navbar"> 
-                        <li><a class="abc" href="index.html">HOME</a></li>
-                        <li><a href="#">CATALOG</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                        <li><a href="login.html">LOGIN</a></li>
-                        <li><a href="#"></a></li>
-                    </ul>      
+                    <nav class="container box-1">
+                        <!-- <img  class="image-showcase" src="/logo.png" alt=""> -->
+                        <div class="hamburger">
+                            <div class="line line1"></div>
+                            <div class="line line2"></div>
+                            <div class="line line3"></div>
+                        </div> 
+                        <div>
+                            <ul class="navbar"> 
+                                <li><a class="abc" href="index.html">HOME</a></li>
+                                <li><a href="#">CATALOG</a></li>
+                                <li><a href="#">CONTACT</a></li>
+                                <li><a href="login.html">LOGIN</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>      
+                        </div>
+                        <img  class="logo" src="/logo.png" alt="">
+                        <div class="sign-in-cart"> 
+                            <div class="cart-btn">
+                                <span class="nav-icon shop-cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </span>
+                                <div class="cart-items">0</div> 
+                            </div>
+                        </div>
+                    </nav>
                 </div>
-                <img  class="logo" src="/logo.png" alt="">
-                <div class="sign-in-cart"> 
-                    <div class="cart-btn">
-                        <span class="nav-icon shop-cart">
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
-                        <div class="cart-items">0</div> 
-                    </div>
+                
+                <div class="form-container sign-up-container">
+                    <form action="">	
+                        <h1>Create an account</h1>
+                        <input type="text" placeholder="First name" autocomplete="off" value="" />						
+                        <input type="text" placeholder="Last name" autocomplete="off" value="" />						
+                        <input type="text" placeholder="enter your email..." autocomplete="off" id="">
+                        <input type="password" placeholder="password" autocomplete="off" id="">
+                        <input type="password" placeholder="confirm password" autocomplete="off" id="">
+                        <button class="login">Proceed</button>
+                        <span>already have an existing account? <a href="login.html">log in</a></span>
+                    </form>
+                  
                 </div>
-            </nav>
-        </div>
-        <div class="form-container sign-up-container">
-            <form action="">	
-                <h1>Create an account</h1>
-                <input type="text" placeholder="First name" autocomplete="email" value="" />						
-                <input type="text" placeholder="Last name" value="" />						
-                <input type="text" placeholder="enter your email..." autocomplete="email" id="">
-                <input type="password" placeholder="password" id="">
-                <input type="password" placeholder="confirm password" id="">
-                <button class="login">Proceed</button>
-                <span>already have an existing account? <a href="login.html">log in</a></span>
-            </form>
-            <div class="sm sign-up-sm">
-                <div>
+                <div class="sm box-3">
                     <h3> follow us...</h3>
                     <p class="sm-icon">
                         <a href="#"><i class="fab fa-twitter" ></i></a>
@@ -62,10 +66,10 @@
                         <a href="#_"><i class="fab fa-youtube"></i></a>
                     </p>
                 </div>
+                
             </div>
-        </div>
-        
-    </section>
+        </section>
+    </header>
     <script src="main.js"></script>
     <script src="product.js"></script>
 </body>
