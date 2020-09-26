@@ -513,6 +513,10 @@ footer #design {
 .close-cart-btn {
     font-size: 2rem;
     cursor: pointer;
+    color: red;
+}
+.close-cart-btn:hover {
+    color: gray;
 }
 fas fa-window-close {
     font-size: 30px;
