@@ -52,8 +52,8 @@ class UI {
                     <img class="product-img" src=${product.image} alt="product">
                     <div class="card-body">
                         <h2>${product.title}</h2>
-                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
-                        <h3>$${product.price}</h3>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
+                        <h4>$${product.price}</h3>
                         <div class="card-icon">
                             <i class="far fa-heart" style="font-size: 22px;"></i>
                             <i class="fas fa-paper-plane" style="font-size: 22px;"></i>

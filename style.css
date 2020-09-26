@@ -352,7 +352,7 @@ transform: rotate(45deg) translate(-5px,-6px);
     text-align: center;
     box-sizing: border-box;  
 }
-.brand h4{
+.brand h3{
     padding-bottom: 10px;
     font-size: 18px;
     letter-spacing: 1px;
@@ -418,11 +418,11 @@ transform: rotate(45deg) translate(-5px,-6px);
     color: red;
 }
 .card-body h4{
-    font-weight: 500;
+    font-weight: 700;
     font-size: 18px;
 }
 .card-body h3{
-    font-weight: 700;
+    font-weight: 200;
     font-size: 18px;
     padding: 5px;
 }
@@ -434,13 +434,13 @@ transform: rotate(45deg) translate(-5px,-6px);
     text-align: left;
 }
 .bag-btn {
-    background-color: #968621;
+    background-color: #0e0d26;
     border: none;
     outline: none;
     border-radius: 5px;
     padding: 8px 10px;
     cursor: pointer;
-    color: #f4f4f4;
+    color: #fff;
 }
 .bag-btn:hover {
     background-color: #e03b3b;
