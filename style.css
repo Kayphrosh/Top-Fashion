@@ -18,7 +18,7 @@ body {
     overflow-x: hidden;
     line-height: 1.6;
     font-size: 16px;
-    background: #f4f4f4;
+    background: #ffffff;
     color: #333333;
 }
 
@@ -111,6 +111,7 @@ a, a:active, a:hover, a:focus {
     height:70px;
     width: 100%;
     overflow: hidden;
+
 }
 .navbar{
     display: flex;
@@ -349,7 +350,7 @@ transform: rotate(45deg) translate(-5px,-6px);
 
 .brand {
     text-align: center;
-    box-sizing: border-box;
+    box-sizing: border-box;  
 }
 .brand h4{
     padding-bottom: 10px;
