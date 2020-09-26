@@ -87,8 +87,11 @@ a, a:active, a:hover, a:focus {
 }
 /*------ SHOWCASE HEADER NAVBAR ---------------*/
 .showcase{
-    background: url(./showc.jpg) center/cover no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./showcase.jpg);
     /* background: #8474a1; */
+    object-fit: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -128,7 +131,7 @@ a, a:active, a:hover, a:focus {
     align-self: center;
     letter-spacing: 3px;
 }
-.navbar a:hover, .a:focus {
+.navbar a:hover, a:focus{
     border-bottom: #968621 2px solid;
     padding-left: 20px;
     color: #968621;
@@ -199,17 +202,23 @@ a, a:active, a:hover, a:focus {
 .content p{
     padding-top: 5px;
     margin-top: 0px;
-    align-items: start;
-    align-content: start;
     letter-spacing: 1.5px;
-    line-height: 2rem;
+    line-height: 2.5rem;
     font-size: 22px;
     font-family: 'Encode Sans Condensed', sans-serif;
 }
 
 .sm {
-    align-self: flex-end;
-    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;padding-right: 10px;
+}
+.sm .hub {
+    padding-top: 25px;
+    padding-left: 5px;
+    color: honeydew;
+}
+.hub p{
+    font-size: 22px;
 }
 .sm h3 {
     text-align: center;
@@ -227,8 +236,8 @@ a, a:active, a:hover, a:focus {
     margin: 0;
 }
 .sm a{
-    font-size: 25px;
-    padding-left:  10px;
+    font-size: 30px;
+    padding-left:  15px;
     color: #919191;
     margin-top: 0px;
     margin: none;
@@ -270,6 +279,7 @@ a, a:active, a:hover, a:focus {
     font-weight: normal;
     overflow: hidden;
 }
+
 .navbar li :nth-child(1){
     transition: all 0.5s ease 0.2s;
 }
@@ -311,6 +321,7 @@ transform: rotate(45deg) translate(-5px,-6px);
     color: #000;
     padding: 10px 30px;
     width: 100%;
+    
 }
 
 .about div {
@@ -362,6 +373,7 @@ transform: rotate(45deg) translate(-5px,-6px);
     text-align: center;
     font-size: 20px;
     padding-bottom: 20px;
+    padding-left: -30px;
     font-weight: 400;
 }
 .products-container {
@@ -555,11 +567,7 @@ fas fa-window-close {
 
 }
 /* END OF CART ITEM */
-@media (max-width: 690px) {
-    /* .products-container{
-        padding: 0px 20px; 
-    } */
-}
+
 @media (max-width: 760px) {
     .cart {
         width: 60%;
@@ -570,7 +578,12 @@ fas fa-window-close {
     .content p {
         font-size: 20px;
     }
-    
+    .sm a{
+        font-size: 20px;
+    } 
+    .hub p{
+        font-size: 18px;
+    }
 }
 @media (min-width: 768px) {
     .abt p{
@@ -596,12 +609,6 @@ fas fa-window-close {
     .sign-up-sm p{
         font-size: 22px;
     }
-}
-.signup-container {
-    background: url(./form-showcase.jpg) center/cover no-repeat;
-    overflow: hidden;
-    height: 100vh;
-    box-sizing: border-box;
 }
 #showc {
     background: url(./form-showcase.jpg) center/cover no-repeat;
@@ -638,7 +645,7 @@ form input {
     outline: none;   
 }
 form input:focus{
-    padding: 16px 10px;
+    padding: 15px 10px;
     transition: 1s ease;
     font-size: 18px;
     letter-spacing: 1px;
