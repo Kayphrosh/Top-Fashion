@@ -87,9 +87,8 @@ a, a:active, a:hover, a:focus {
 }
 /*------ SHOWCASE HEADER NAVBAR ---------------*/
 .showcase{
-    background-image:  url(./showcase.jpg);
-    /* background: #8474a1; */
-    object-fit: fill;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./showcase.jpg);
+    object-fit: center/cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
