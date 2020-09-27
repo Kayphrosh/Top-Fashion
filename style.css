@@ -216,7 +216,7 @@ a, a:active, a:hover, a:focus {
 .sm .hub {
     padding-top: 25px;
     padding-left: 5px;
-    color: honeydew;
+    color: #ffffff;
 }
 .hub p{
     font-size: 22px;
@@ -584,10 +584,10 @@ fas fa-window-close {
         font-size: 20px;
     }
     .sm a{
-        font-size: 20px;
+        font-size: 25px;
     } 
     .hub p{
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 @media (min-width: 768px) {
@@ -616,7 +616,7 @@ fas fa-window-close {
     }
 }
 #showc {
-    background: url(./form-showcase.jpg) center/cover no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./signup-showcase.jpg);
     overflow: hidden;
 
 }
@@ -643,7 +643,7 @@ form input {
     font-size: 14px;
     color: #f4f4f4;
     border: none;
-    border-bottom: 2px #fff solid;
+    border-bottom: 3px #fff solid;
     width: 500px;
     padding: 5px 10px;
     margin: 15px 0;
@@ -654,7 +654,7 @@ form input:focus{
     transition: 1s ease;
     font-size: 18px;
     letter-spacing: 1px;
-    border-bottom: 2px #0e0d26 solid;
+    border-bottom: 3px #0e0d26 solid;
 }
 input::placeholder {
     color: #ffffff;
