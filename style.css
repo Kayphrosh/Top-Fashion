@@ -62,6 +62,7 @@ a, a:active, a:hover, a:focus {
     background: transparent;
     color: #f4f4f4;
     border: 1px solid #cfcfcf;
+    transition: 1s ease-in;
 }
 .send:focus{
     outline: none;
@@ -87,8 +88,8 @@ a, a:active, a:hover, a:focus {
 }
 /*------ SHOWCASE HEADER NAVBAR ---------------*/
 .showcase{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./showcase.jpg);
-    object-fit: center/cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(./show.jpg);
+    object-fit: center;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -257,7 +258,7 @@ a, a:active, a:hover, a:focus {
 } 
 .hamburger {
     cursor: pointer;
-    z-index: 2;
+    z-index: 1;
     overflow: hidden;
     padding: 17px 20px;
 }
@@ -283,20 +284,21 @@ a, a:active, a:hover, a:focus {
 .navbar li :nth-child(1){
     transition: all 0.5s ease 0.2s;
 }
+
 .navbar li :nth-child(2){
     transition: all 0.5s ease 0.4s;
 }
+
 .navbar li :nth-child(3){
     transition: all 0.5s ease 0.6s;
 }
-li.fade {
-    opacity: 1;
-}
 
+li.fade {
+    opacity: 3;
+}
 
 .toggle .line1{
 transform: rotate(-45deg) translate(-5px,6px);
-
 }
 
 .toggle .line2{
@@ -455,24 +457,41 @@ footer {
 footer #design {
     margin-top: 20px;
 }
-
+.footer-sm-icon {
+    width: 100%;
+    font-size: 30px;
+    color: #ccc;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+.footer-sm-icon .fab {
+    color: #353535;
+}
+.footer-sm-icon .fab:hover{
+    color: #f5f5f5;
+    transition: ease-in 1s;
+}
 .footer-contact {
     padding-bottom: 5px;
     margin-left: 10px;
     margin-top: 0;
+    text-align: center;
 }
 .footer-contact p{
     font-weight: 100;
     letter-spacing: 1px;
     padding: 0;
     margin:0;
+    font-size: 14px;
 }
 .footer-text {
     text-align: center;
 }
-.atm-icon {
-    font-size: 30px;
-    padding: 0px 0px 10px 0px;
+.atm-icon img {
+    width: 50px;
+    padding: 0px 0px 0px 0px;
+    align-items: center;
 }
 
 /*--------------- END OF MAIN FOOTER SECTION ---------*/
@@ -485,7 +504,7 @@ footer #design {
     right: 0;
     width: 100%;
     height: 100%;
-    background: rgba(216, 212, 208, 0.2);
+    background: rgba(82, 82, 82, 0.2);
     transition: 1s ease-in;
     z-index: 1;
     visibility: hidden;
@@ -494,14 +513,18 @@ footer #design {
     position: fixed;
     top: 0;
     right: 0;
-    min-width:40%;
+    min-width:50%;
     height: 100%;
     overflow-y: scroll;
     z-index: 2;
-    background: #c7c7c7;
-    padding: 1.5rem;
+    background: #7a7a7a;
+    padding: 1rem 3rem;
     transition: 1s ease-in;
     transform: translateX(100%);
+}
+.cart-header {
+    display: flex;
+    justify-content: space-between;
 }
 .showCart {
     transform: translateX(0);
@@ -512,10 +535,10 @@ footer #design {
 .close-cart-btn {
     font-size: 2rem;
     cursor: pointer;
-    color: red;
+    color: #f52727;
 }
 .close-cart-btn:hover {
-    color: gray;
+    color:#000;
 }
 fas fa-window-close {
     font-size: 30px;
@@ -540,6 +563,17 @@ fas fa-window-close {
     text-transform: capitalize;
     margin-bottom: 1rem;
 }
+.cart-footer2{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    align-items: center;
+}
+.cart-footer2 .iconify {
+    font-size: 22px;
+    margin-left: 5px;
+}
 
 /* END OF CART FOOTER */
 
@@ -548,7 +582,7 @@ fas fa-window-close {
     display: grid;
     align-items: center;
     grid-template-columns: auto 1fr auto; 
-    grid-column-gap: 1.5rem;
+    grid-column-gap: 2rem;
     margin: 1.5rem 0;
 }
 .cart-item img {
@@ -565,16 +599,21 @@ fas fa-window-close {
     font-size: 20px;
 
 }
+.clear-cart {
+    margin-top: 0;
+}
 .remove-item{
     color: #d61f1f;
     text-transform: lowercase;
-
+}
+.remove-item:hover {
+    color: #000;
 }
 /* END OF CART ITEM */
 
 @media (max-width: 760px) {
     .cart {
-        width: 60%;
+        width: 100%;
     }
     .cart h2 {
         font-size: 24px;
@@ -615,9 +654,8 @@ fas fa-window-close {
     }
 }
 #showc {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./signup-showcase.jpg);
+    background-image: url(./sign.jpg);
     overflow: hidden;
-
 }
 .form-container {
     width: 100%;
@@ -631,7 +669,8 @@ form {
     width: 100%;
 }
 form h1 {
-    font-size: 30px;
+    font-size: 26px;
+    padding-top: 20px;
     text-transform: capitalize;
     letter-spacing: 3px;
     color: #f5f5f5;

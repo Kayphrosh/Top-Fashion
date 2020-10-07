@@ -105,10 +105,12 @@
         <section>
             <div class="cart-body">
                 <div class="cart">
-                    <span class="close-cart-btn">
-                        <span class="iconify" data-icon="ant-design:close-outlined" data-inline="false"></span>
-                    </span>
-                    <h2> Your cart section</h2>
+                    <div class="cart-header">
+                        <span class="close-cart-btn">
+                            <span class="iconify" data-icon="ant-design:close-outlined" data-inline="false"></span>
+                        </span>
+                        <h2> Your cart section</h2>
+                    </div>
                     <div class="cart-content">
                         <!--  ---------- CART ITEM ----- -->
                         <div class="cart-item">
@@ -119,7 +121,14 @@
                             <h3>Your total : $ <span class="cart-total">0</span></h3>
                             <button type="submit" class="send clear-cart">clear cart</button>
                         </div>
-                    
+                        <div class="cart-footer2">
+                            <p>
+                                <img src="mastercard.png" style="width: 50px;" alt="">
+                                <img src="visa.png" style="width: 50px;" alt="">
+                                <br>                           
+                                <span class="iconify" data-icon="ps:padlock" data-inline="false"></span> Safe and Secure
+                            </p>
+                        </div>
                 </div>
             </div>
         </section> 
@@ -154,16 +163,23 @@
                                            <!------ FOOTER SECTION ------>
         <section>
             <footer>
+                <div class="footer-sm-icon">
+                        <a rel="noopener" target="_blank" href="https://twitter.com/tailoredbytop?s=09"><i class="fab fa-twitter" ></i></a>
+                        <a rel="noopener" target="_blank" href="wa.me/2347062778174"><i class="fab fa-whatsapp" ></i></a>
+                        <a rel="noopener" target="_blank" href="https://www.instagram.com/miztoluwani/"><i class="fab fa-instagram" ></i></a>
+                        <a rel="noopener" target="_blank" href="https://www.instagram.com/tailoredbytop/"><i class="fab fa-facebook"></i></a>
+                        <a rel="noopener" target="_blank" href="https://www.youtube.com/channel/UCxlPCNnx0CHn9jquSLmK2Ng"><i class="fab fa-youtube"></i></a>
+                </div>
                 <div class="footer-contact">
-                    <p><span class="iconify" data-icon="bi:telephone" data-inline="false"></span> +2347062778174</p>
-                    <p><span class="iconify" data-icon="carbon:email" data-inline="false"></span>  tailoredbytop1@gmail.com</p>
+                    <p>+2347062778174</p>
+                    <p>tailoredbytop1@gmail.com</p>
                 </div>
                 <div class="footer-text">
                     <small id="design">Developed by @kayphrosh ||</small>
                     <small>Tailored by top, copyright </span> &copy; 2020.</small>
-                    <div style="overflow: hidden;" class="atm-icon">
-                        <span class="iconify" data-icon="logos:mastercard" data-inline="false" ></span>
-                        <span class="iconify" data-icon="fa-brands:cc-visa" data-inline="false"></span>
+                    <div class="atm-icon">
+                        <img src="mastercard.png" alt="">
+                        <img src="visa.png" alt="">
                     </div>
                 </div>
             </footer>
