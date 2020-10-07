@@ -463,10 +463,10 @@ footer #design {
     color: #ccc;
     justify-content: center;
     display: flex;
-    gap: 20px;
 }
 .footer-sm-icon .fab {
     color: #353535;
+    padding-right: 10px;
 }
 .footer-sm-icon .fab:hover{
     color: #f5f5f5;
