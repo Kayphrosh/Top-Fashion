@@ -180,7 +180,7 @@ a, a:active, a:hover, a:focus {
     box-sizing: border-box;
     color: #ffffff;
     overflow: hidden;
-    margin-top: 60px;
+    margin-top: 10vh;
 }
 .content h3{
     letter-spacing: 4px;
@@ -212,7 +212,7 @@ a, a:active, a:hover, a:focus {
     display: flex;
     justify-content: space-between;
     padding-right: 10px;
-    margin-top: 70px;
+    margin-top: 10vh;
 }
 .sm .hub {
     padding-top: 35px;
