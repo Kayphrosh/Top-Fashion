@@ -110,7 +110,6 @@ a, a:active, a:hover, a:focus {
     height:70px;
     width: 100%;
     overflow: hidden;
-
 }
 .navbar{
     display: flex;
@@ -181,6 +180,7 @@ a, a:active, a:hover, a:focus {
     box-sizing: border-box;
     color: #ffffff;
     overflow: hidden;
+    margin-top: 50px;
 }
 .content h3{
     letter-spacing: 4px;
@@ -210,7 +210,9 @@ a, a:active, a:hover, a:focus {
 
 .sm {
     display: flex;
-    justify-content: space-between;padding-right: 10px;
+    justify-content: space-between;
+    padding-right: 10px;
+    margin-top: 50px;
 }
 .sm .hub {
     padding-top: 35px;
