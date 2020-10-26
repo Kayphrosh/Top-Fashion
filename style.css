@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Encode+Sans+Condensed:wght@500&family=Great+Vibes&family=Italianno&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Syne:wght@500&family=Yanone+Kaffeesatz&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -18,7 +17,7 @@ body {
     overflow-x: hidden;
     line-height: 1.6;
     font-size: 16px;
-    background: #ffffff;
+    background: #f4f4f4;
     color: #333333;
 }
 
@@ -54,7 +53,7 @@ a, a:active, a:hover, a:focus {
     cursor: pointer;
     overflow: hidden;
     box-sizing: border-box;
-    border: none;
+    border: 1px solid #919191;
     font-family: 'Encode Sans Condensed', sans-serif;
     letter-spacing: 1px;
 }
@@ -98,7 +97,7 @@ a, a:active, a:hover, a:focus {
     flex-basis: 33%;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 0;   
 }
 .box-1 {
     display: flex;
@@ -120,10 +119,16 @@ a, a:active, a:hover, a:focus {
     top: 0px;
     left: 0px;
     height: 100%;
-    width: 250px;
+    width: 450px;
     background-color:#0e0d26;
     clip-path: circle(10px at 90% -10%);
     -webkit-clip-path: circle(10px at 90% -10%);
+}
+@media (max-width: 760px){
+    .navbar {
+        z-index: 0.5;
+        width: 100%;
+    }
 }
 .navbar a {
     color: #dcdcdc;
@@ -179,8 +184,8 @@ a, a:active, a:hover, a:focus {
     font-size: 20px;
     box-sizing: border-box;
     color: #ffffff;
+    margin-top: 10vh;
     overflow: hidden;
-    margin-top: 13vh;
 }
 .content h3{
     letter-spacing: 4px;
@@ -190,14 +195,13 @@ a, a:active, a:hover, a:focus {
     color:#fde245d3;
     font-family: 'Playfair Display SC', serif;
     overflow: hidden;
+    width: 100%;
     padding-bottom: 15px;
     margin-bottom: 10px;
-    box-shadow: rgba(0, 0, 0, 0.9);
 }
 .content .name {
     padding-bottom: 10px;
     border-bottom: 3px #0e0d26 solid;
-
 }
 .content p{
     padding-top: 5px;
@@ -212,7 +216,7 @@ a, a:active, a:hover, a:focus {
     display: flex;
     justify-content: space-between;
     padding-right: 10px;
-    margin-top: 10vh;
+    margin-top: 12vh;
 }
 .sm .hub {
     padding-top: 35px;
@@ -314,55 +318,128 @@ transform: rotate(45deg) translate(-5px,-6px);
 /* SHOPING CART */
 
 @media screen  and (max-width: 800px){
+    .showcase{
+        height: 100%;
+        min-height: 100vh;
+    }
+    .send {
+        padding: 15px 80px;
+        border-radius: 5px;
+    }
+    .content {
+        align-self: center;
+        text-align: left;
+    }
+    .content h3 {
+        margin-left: 0;
+        padding-left: 0;
+        align-self: start;
+        text-align: left;
+    }
     .logo {
         left: 42%;
         position: absolute;
     }
 }
 /*---------------- ABOUT SECTION -----------------*/
-.about {
+#about {
+    padding: 10px 100px;
+    padding-bottom: 50px;
+    height: 100%;
     color: #000;
-    padding: 10px 30px;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    background: #f4f4f4;
+}
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
     width: 100%;
-    
+    height: 100%;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+    justify-items: center;
+    font-size: 14px;
 }
-
-.about div {
-    padding: 10px 0px;
-}
-.about h2 {
-    font-size: 24px;
-    letter-spacing: 2px;
-    text-align: center;
-    font-weight: 600;
-}
-.abt p{
-    text-align: center;
-    box-sizing: border-box;
-    align-items: center;
-    font-weight: 100;
-    letter-spacing: 0.5px;
+.about p{
     font-size: 16px;
+    color: #0c0c0e;
 }
-.about-icon .iconify {
-    font-size: 40px;
-    color: #64778d;
-    text-align: center;
+.abut {
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+    max-width:600px; 
 }
-
-.brand {
-    text-align: center;
-    box-sizing: border-box;  
+.abut h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
-.brand h3{
+.one {
+    background: #f4f4f4;
+    border-radius: 20px;
+    border: 2px rgb(105, 104, 104) solid;
+    margin: 0px 0px;
+    min-height:210px;
+    width: 100%;
+    max-width:500px;
+    padding: 30px 20px;
+    padding-top: 5px;
+    align-self: center;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 20px 30px 10px rgba(201, 201, 201, 0.502);
+}
+.one h2 {
+    text-align: right;
+    font-size: 50px;
+    padding-right: 10px;
+    color: #a0a0a0;
+}
+.one .iconify {
+    font-size: 60px;
+    color: #0e0d26;
+}
+.one h3{
+    font-size: 20px;
     padding-bottom: 10px;
-    font-size: 18px;
-    letter-spacing: 1px;
+    color: #000011;
 }
-.brand p{
-    font-weight: 100;
-    letter-spacing: 0.5px;
-    font-size: 16px;
+
+@media  (min-width: 1000px){
+    .abut {
+        padding-left: -10px;
+        margin-top: 70px;
+        /* margin-left: -30px; */
+    }
+    .designer {
+        transform: translate(-0%, 40%);
+    }
+    .philosophy {
+        margin-top: -250px;
+    }
+    .costs {
+        margin-top: 150px; 
+        margin-bottom: 40px;
+    }  
+}
+@media (max-width: 700px){
+    #about {
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+    .one {
+        width: 100%;
+        margin-bottom: 20px;
+        box-shadow: none;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /*--------------- END OF ABOUT SECTION ---------*/
@@ -389,13 +466,13 @@ transform: rotate(45deg) translate(-5px,-6px);
     justify-items: center;
 }
 .img-container {
-    background: #fff;
+    background: #f4f4f4;
     border-radius: 10px;
-    border: 5px rgb(105, 104, 104) solid;
+    border: 3px rgb(105, 104, 104) solid;
     margin: 0px 0px;
     height:fit-content;
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     
 }
 .product-img {
@@ -459,19 +536,22 @@ footer #design {
     margin-top: 20px;
 }
 .footer-sm-icon {
-    width: 100%;
-    font-size: 30px;
-    color: #ccc;
-    justify-content: center;
     display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 35px;
+    color: #ccc;
+    gap: 30px ;   
 }
 .footer-sm-icon .fab {
     color: #353535;
-    padding-right: 10px;
 }
 .footer-sm-icon .fab:hover{
     color: #f5f5f5;
     transition: ease-in 1s;
+    overflow: hidden;
+    border: none;
 }
 .footer-contact {
     padding-bottom: 5px;
