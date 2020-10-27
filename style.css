@@ -361,7 +361,7 @@ transform: rotate(45deg) translate(-5px,-6px);
 .models-img img{
     width: 100%;
     gap: 50px;
-    border-radius: 20px;
+    border-radius: 30px;
     opacity: 0.9;
 }
 .models-img img:hover{
@@ -372,11 +372,14 @@ transform: rotate(45deg) translate(-5px,-6px);
     .model{
         padding: 20px 50px;
     }
+    .model h2{
+        padding: 0px 70px;
+    }
     .models-img{
         padding: 10px 40px;
     }
     .models-img img {
-        padding: 20px 40px;
+        padding: 20px 20px;
         border-radius: 30px;
     }
 }
