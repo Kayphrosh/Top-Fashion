@@ -112,7 +112,7 @@ a, a:active, a:hover, a:focus {
 }
 .navbar{
     display: flex;
-    justify-content:flex-start;
+    justify-content:center;
     flex-direction: column;
     transition: ease-in 1000ms;
     position: absolute;
