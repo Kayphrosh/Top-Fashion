@@ -119,6 +119,7 @@ a, a:active, a:hover, a:focus {
     top: 0px;
     left: 0px;
     height: 100%;
+    max-height: 110vh;
     width: 450px;
     background-color:#0e0d26;
     clip-path: circle(10px at 90% -10%);
@@ -217,7 +218,7 @@ a, a:active, a:hover, a:focus {
     display: flex;
     justify-content: space-between;
     padding-right: 10px;
-    margin-top: 12vh;
+    margin-top: 11vh;
 }
 .sm .hub {
     padding-top: 35px;
