@@ -88,6 +88,7 @@ a, a:active, a:hover, a:focus {
 /*------ SHOWCASE HEADER NAVBAR ---------------*/
 .showcase{
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(./show.jpg);
+    opacity: 0.9;
     object-fit: center;
     background-position: center;
     background-repeat: no-repeat;
@@ -186,7 +187,6 @@ a, a:active, a:hover, a:focus {
     font-size: 20px;
     box-sizing: border-box;
     color: #ffffff;
-    margin-top: 10vh;
     overflow: hidden;
 }
 .content h3{
@@ -218,7 +218,6 @@ a, a:active, a:hover, a:focus {
     display: flex;
     justify-content: space-between;
     padding-right: 10px;
-    margin-top: 11vh;
 }
 .sm .hub {
     padding-top: 35px;
@@ -355,7 +354,7 @@ transform: rotate(45deg) translate(-5px,-6px);
 }
 .about {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
     gap: 10px;
     width: 100%;
     height: 100%;
@@ -386,7 +385,7 @@ transform: rotate(45deg) translate(-5px,-6px);
     margin: 0px 0px;
     min-height:210px;
     width: 100%;
-    max-width:500px;
+    max-width:450px;
     padding: 30px 20px;
     padding-top: 5px;
     align-self: center;
@@ -411,6 +410,12 @@ transform: rotate(45deg) translate(-5px,-6px);
 }
 
 @media  (min-width: 760px){
+    .content {
+        margin-top: 10vh;
+    }
+    .sm {
+        margin-top: 11vh;
+    }
     .abut {
         padding-left: -10px;
         margin-top: 70px;
@@ -427,7 +432,7 @@ transform: rotate(45deg) translate(-5px,-6px);
         margin-bottom: 40px;
     }  
 }
-@media (max-width: 700px){
+@media (max-width: 760px){
     #about {
         padding: 20px;
         padding-bottom: 40px;
