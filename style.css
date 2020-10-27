@@ -118,11 +118,13 @@ a, a:active, a:hover, a:focus {
     position: absolute;
     top: 0px;
     left: 0px;
+    min-height: 100vh;
     height: 100%;
     width: 450px;
     background-color:#0e0d26;
     clip-path: circle(10px at 90% -10%);
     -webkit-clip-path: circle(10px at 90% -10%);
+    overflow: hidden;
 }
 @media (max-width: 760px){
     .navbar {
@@ -276,7 +278,7 @@ a, a:active, a:hover, a:focus {
     opacity: 0;
     overflow: hidden;
     align-self: center;
-    padding-top: 90px;
+    padding-top: 80px;
     transition: ease 2s;
 }
 .navbar li a{
@@ -409,7 +411,7 @@ transform: rotate(45deg) translate(-5px,-6px);
     color: #000011;
 }
 
-@media  (min-width: 1000px){
+@media  (min-width: 760px){
     .abut {
         padding-left: -10px;
         margin-top: 70px;
@@ -538,11 +540,12 @@ footer #design {
 .footer-sm-icon {
     display: flex;
     justify-content: center;
+    justify-content: space-evenly;
+    padding: 0 20%;
     margin-bottom: 10px;
     width: 100%;
     font-size: 35px;
-    color: #ccc;
-    gap: 30px ;   
+    color: #ccc;   
 }
 .footer-sm-icon .fab {
     color: #353535;
@@ -710,6 +713,12 @@ fas fa-window-close {
     }
 }
 @media (min-width: 768px) {
+    .footer-sm-icon {
+        padding: 0 35%;
+    }
+    .nav-sm {
+        padding: 0 20%;
+    }
     .abt p{
         padding: 0 150px;
     }
