@@ -118,7 +118,6 @@ a, a:active, a:hover, a:focus {
     position: absolute;
     top: 0px;
     left: 0px;
-    min-height: 100vh;
     height: 100%;
     width: 450px;
     background-color:#0e0d26;
