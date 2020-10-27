@@ -372,6 +372,13 @@ transform: rotate(45deg) translate(-5px,-6px);
     .model{
         padding: 20px 50px;
     }
+    .models-img{
+        padding: 10px 40px;
+    }
+    .models-img img {
+        padding: 20px 40px;
+        border-radius: 30px;
+    }
 }
 @media (max-width: 760px){
     .model {
