@@ -407,7 +407,7 @@ transform: rotate(45deg) translate(-5px,-6px);
     font-family: 'Noto Sans JP', sans-serif;
     letter-spacing: 0.2px;
     font-weight: 400;
-    background: #f4f4f4;
+    background: url(./Desktop\ -\ 1.png);
 }
 .about {
     display: grid;
