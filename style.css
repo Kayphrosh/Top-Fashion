@@ -436,7 +436,7 @@ transform: rotate(45deg) translate(-5px,-6px);
     margin-bottom: 10px;
 }
 .one {
-    background: #f4f4f4;
+    background:transparent;
     border-radius: 20px;
     border: 2px rgb(105, 104, 104) solid;
     margin: 0px 0px;
