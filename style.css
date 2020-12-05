@@ -921,7 +921,7 @@ form small {
 
 .btn-effect {
     width: 60px; 
-    height: 30px;
+    height: 35px;
     outline: 0;
     border: 2px solid #ccc;
     color: #000;
@@ -941,14 +941,14 @@ form small {
 
 .btn-like {
     padding: 5px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     border-radius: 5px;
     background: #fff;
     transition: 1.5s cubic-bezier(.21,.04,.26,.99);
 }
 .btn-like.liked {
-    background: var(--red);
-    border-color: var(--red);
+    background: #0e0d26;
+    border-color: #0e0d26;
 }
 
 /*-- Button Icon -- */
@@ -962,7 +962,7 @@ form small {
     transform: rotate(0deg)
 }
 .btn-effect:hover .btn-icon {
-    color: #0e0d26;
+    color: var(--red);
 }
 .btn.liked:hover .btn-icon {
     color: var(--black);
@@ -976,7 +976,7 @@ form small {
 .liked .btn--icon-default,
 .btn--icon-liked {
     opacity: 0;
-    color: #fff;
+    color: var(--red);
     position: absolute;
 }
 .btn--icon-default,

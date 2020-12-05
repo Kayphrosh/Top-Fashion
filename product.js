@@ -56,10 +56,10 @@ class UI {
                         <div class="card-icon">
                         <button class="btn-effect btn-like">
                             <span class="btn-icon btn--icon-default">
-                                <span class="fa fa-heart"></span>
+                            <span class="iconify" data-icon="carbon:favorite-filled" data-inline="false"></span>
                             </span>
                             <span class="btn-icon btn--icon-liked">
-                                <span class="fa fa-heart"></span>
+                            <span class="iconify" data-icon="carbon:favorite-filled" data-inline="false"></span>
                             </span>
                         </button>
                             <i class="fas fa-paper-plane" style="font-size: 22px;"></i>
