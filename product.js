@@ -63,7 +63,7 @@ class UI {
                             </span>
                         </button>
                             <i class="fas fa-paper-plane" style="font-size: 22px;"></i>
-                            <button class="bag-btn" data-id=${product.id}><i class="fas fa-cart-plus"></i> Add to cart</button>
+                            <button class="bag-btn" data-id=${product.id}><span class="iconify" data-icon="bi:cart-plus" data-inline="false"></span> Add to cart</button>
                         </div>
                     </div> 
                 </div>   
@@ -74,9 +74,9 @@ class UI {
     } 
     getBagButtons() {
         const buttons = [...document.querySelectorAll(".bag-btn")];
-        const button = [...document.querySelectorAll(".btn-effect")];
+        const buttonz = [...document.querySelectorAll(".btn-effect")];
         
-        button.forEach(button => {
+        buttonz.forEach(button => {
             button.addEventListener('click', () => {
                 button.classList.toggle('liked')
             })
