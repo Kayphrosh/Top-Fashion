@@ -120,7 +120,7 @@ a, a:active, a:hover, a:focus {
     background-color:#0e0d26;
     align-content: center;
     flex-basis: 33%;
-    height:70px;
+    height: 60px;
     width: 100%;
     overflow: hidden;
 }
@@ -159,7 +159,7 @@ a, a:active, a:hover, a:focus {
 
 .logo {
     padding: 0px 0px;
-    width: 80px;
+    width: 70px;
     margin: 0;
     position: absolute;
     left: 47%;
@@ -167,31 +167,35 @@ a, a:active, a:hover, a:focus {
 
 .sign-in-cart {
     display: flex;
-    padding: 20px 5px;
+    padding: 15px 5px;
     justify-content: space-between;
+    margin-right: 10px;
 }
 .cart-btn{
     display: flex;
 }
 .shop-cart {
-    font-size: 25px; 
-    color: #9bb19d; 
+    font-size: 25px;
+    position: relative; 
+    color: #fff; 
     overflow: hidden;
     cursor: pointer;
     margin: 0 5px;
+    margin-top: -5px;
 }
 .shop-cart:hover {
     color: #968621;
 }
 .cart-items {
     position: absolute;
-    top: 12px;
-    right: 6px;
+    top: 6px;
+    right: 12px;
     color: #f4f4f4;
-    background-color:  #968621;
-    padding: 0px 5px;
+    background-color:#968621;
+    padding: 1px 5px;
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 .content {
@@ -589,9 +593,17 @@ transform: rotate(45deg) translate(-5px,-6px);
     padding: 8px 10px;
     cursor: pointer;
     color: #fff;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
 }
 .bag-btn:hover {
     background-color: #e03b3b;
+}
+.bag-btn .iconify {
+    font-size: 16px;
+    align-self: center;
 }
 /*---------------- END OF PRODUCTS SECTION -----------------*/
 /*--------------- MAIN FOOTER SECTION ---------*/
