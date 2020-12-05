@@ -37,7 +37,6 @@ class Products {
             console.log(error);
         }
     }
-
 }
 
 
@@ -55,7 +54,14 @@ class UI {
                         <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
                         <h4>$${product.price}</h3>
                         <div class="card-icon">
-                            <i class="far fa-heart" style="font-size: 22px;"></i>
+                        <button class="btn-effect btn-like">
+                            <span class="btn-icon btn--icon-default">
+                                <span class="fa fa-heart"></span>
+                            </span>
+                            <span class="btn-icon btn--icon-liked">
+                                <span class="fa fa-heart"></span>
+                            </span>
+                        </button>
                             <i class="fas fa-paper-plane" style="font-size: 22px;"></i>
                             <button class="bag-btn" data-id=${product.id}><i class="fas fa-cart-plus"></i> Add to cart</button>
                         </div>
@@ -65,9 +71,17 @@ class UI {
             `;
         });
         productsDOM.innerHTML = result;
-    }
+    } 
     getBagButtons() {
         const buttons = [...document.querySelectorAll(".bag-btn")];
+        const button = [...document.querySelectorAll(".btn-effect")];
+        
+        button.forEach(button => {
+            button.addEventListener('click', () => {
+                button.classList.toggle('liked')
+            })
+        })
+        
         buttonsDom = buttons;
         buttons.forEach(button => {
             let id = button.dataset.id;
@@ -76,7 +90,6 @@ class UI {
                 button.innerText = "In Cart";
                 button.disabled = true;
             }
-            
             button.addEventListener("click", event => {
                 event.target.innerText = "In Cart";
                 event.target.disabled = true;
@@ -95,7 +108,6 @@ class UI {
                 //Show the cart
                 this.showCart();
             });
-            
         });
     }
     setCartValues(cart) {
