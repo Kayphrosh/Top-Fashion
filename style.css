@@ -337,7 +337,12 @@ a, a:active, a:hover, a:focus {
 .sm a:hover{
     color: #ffffff;   
 }
-
+.nav-sm {
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 30px;
+    text-align: center;
+}
 .line {
     width: 30px;
     height: 2.5px;
@@ -897,6 +902,7 @@ fas fa-window-close {
 }
 @media (min-width: 768px) {
     .nav-sm {
+        text-align: center;
         padding: 0 20%;
     }
     .abt p{
