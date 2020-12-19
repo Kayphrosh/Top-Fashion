@@ -274,6 +274,7 @@ a, a:active, a:hover, a:focus {
     color: #ffffff;
     overflow: hidden;
     margin-left: 20px;
+    margin-top: auto;
 }
 .content h3{
     letter-spacing: 4px;
