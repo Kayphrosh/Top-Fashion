@@ -121,7 +121,7 @@ a, a:active, a:hover, a:focus {
     text-decoration: none;
 }
 .send, .clear-cart {
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 15px 50px;
     background:#919191;
     font-size: 14px;
@@ -206,6 +206,7 @@ a, a:active, a:hover, a:focus {
     clip-path: circle(10px at 90% -10%);
     -webkit-clip-path: circle(10px at 90% -10%);
     overflow: hidden;
+    z-index: 0;
 }
 @media (max-width: 760px){
     .navbar {
@@ -248,14 +249,14 @@ a, a:active, a:hover, a:focus {
     overflow: hidden;
     cursor: pointer;
     margin: 0 5px;
-    margin-top: -5px;
+    margin-top: 0px;
 }
 .shop-cart:hover {
     color: #968621;
 }
 .cart-items {
     position: absolute;
-    top: 6px;
+    top: 8px;
     right: 12px;
     color: #f4f4f4;
     background-color:#968621;
@@ -272,8 +273,7 @@ a, a:active, a:hover, a:focus {
     box-sizing: border-box;
     color: #ffffff;
     overflow: hidden;
-    margin-left: 10px;
-    margin-top: 50px;
+    margin-left: 20px;
 }
 .content h3{
     letter-spacing: 4px;
@@ -282,14 +282,13 @@ a, a:active, a:hover, a:focus {
     color:#fff;
     font-family: 'Lobster', cursive;
     overflow: hidden;
-    width: 100%;
-    padding-bottom: 15px;
-;
+    width: fit-content;
+    padding: 10px 10px;
+    /* text-align: center; */
+    border: 2px solid #312c00;
+    
 }
-.content .name {
-    padding-bottom: 10px;
-    border-bottom: 3px #0e0d26 solid;
-}
+
 .content p{
     padding-top: 5px;
     margin-top: 0px;
@@ -302,7 +301,7 @@ a, a:active, a:hover, a:focus {
 .sm {
     display: flex;
     justify-content: space-between;
-    padding-right: 10px;
+    margin-top: auto;
 }
 .sm .hub {
     padding-top: 35px;
@@ -314,7 +313,7 @@ a, a:active, a:hover, a:focus {
 }
 .sm h3 {
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     letter-spacing: 2px;
     font-weight: 400;
     color: #f4f4f4;
@@ -322,24 +321,22 @@ a, a:active, a:hover, a:focus {
 .sm-icon {
     display: flex;
     flex-direction: row;
-    word-spacing: 0px;
-    letter-spacing: 1px;
-    padding: 0;
     margin: 0;
 }
 .sm a{
-    font-size: 30px;
-    padding-left:  15px;
+    font-size: 25px;
     color: #919191;
+    padding-right: 5px;
     margin-top: 0px;
     margin: none;
+    width: 100%;
 }
 .sm a:hover{
     color: #ffffff;   
 }
 .nav-sm {
     margin-top: 10px;
-    padding-left: 10px;
+    padding-left: 0px;
     font-size: 30px;
     text-align: center;
 }
@@ -417,12 +414,13 @@ transform: rotate(45deg) translate(-5px,-6px);
         border-radius: 5px;
     }
     .content {
+        margin-left: 10px;
         align-self: center;
         text-align: left;
     }
     .content h3 {
         margin-left: 0;
-        padding-left: 0;
+        padding-left: 10px;
         align-self: start;
         text-align: left;
     }
@@ -894,7 +892,7 @@ fas fa-window-close {
         font-size: 20px;
     }
     .sm a{
-        font-size: 22px;
+        font-size: 25px;
     } 
     .hub p{
         font-size: 18px;
