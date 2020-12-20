@@ -716,7 +716,7 @@ footer .quick-links {
 .links a{
     display: flex;
     color: #f4f4f4;
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 10px;
     width: fit-content;
 }
@@ -730,19 +730,19 @@ footer .quick-links {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     gap: 5px;
     padding: 0 20%;
     margin:  10px 0;
     width: 100%;
-    font-size: 14px;
+    font-size: 10px;
     color: #ccc;   
 }
 .footer-sm-icon a{
     color: #f4f4f4;
     align-items: center;
-    font-size: 16px;
+    font-size: 12px;
     width: fit-content;
+    margin-top: 10px;
 }
 .footer-sm-icon a:hover{
     border-bottom: #968621 2px solid;
@@ -806,6 +806,10 @@ footer.contact-hotlines {
         margin: auto;
         justify-content: center;
         padding-bottom: 10px;
+        font-size: 14px;
+    }
+    .footer-sm-icon a {
+        font-size: 14px;
     }
 }
 @media (max-width: 780px){
