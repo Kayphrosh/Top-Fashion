@@ -21,6 +21,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
 } */
+
 .alarm {
     font-family: 'Heebo', sans-serif;
     color:#fff;
@@ -206,7 +207,6 @@ a, a:active, a:hover, a:focus {
     clip-path: circle(10px at 90% -10%);
     -webkit-clip-path: circle(10px at 90% -10%);
     overflow: hidden;
-    z-index: 0;
 }
 @media (max-width: 760px){
     .navbar {
@@ -265,7 +265,12 @@ a, a:active, a:hover, a:focus {
     font-size: 12px;
     font-weight: 700;
 }
-
+.box-2 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-self: center;
+}
 .content {
     align-content: left;
     text-align: left;
@@ -302,7 +307,7 @@ a, a:active, a:hover, a:focus {
 .sm {
     display: flex;
     justify-content: space-between;
-    margin-top: auto;
+    /* margin-top: auto; */
 }
 .sm .hub {
     padding-top: 35px;
@@ -643,6 +648,7 @@ transform: rotate(45deg) translate(-5px,-6px);
     margin: 10px 20px;
     color: #2b2b2c;
     align-content: center;
+    align-items: center;
 }
 .card-icon:focus {
     color: red;
@@ -696,35 +702,53 @@ footer {
 footer #design {
     margin-top: 20px;
 }
+footer .quick-links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.links {
+    margin-top: 20px;
+}
+.links a{
+    color: #f4f4f4;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.links a:hover {
+    border-bottom: #968621 2px solid;
+    padding-left: 20px;
+    color: #968621;
+}
 .footer-sm-icon {
     display: flex;
     justify-content: space-between;
     padding: 0 20%;
-    margin-top: 10px;
+    margin:  10px 0;
     width: 100%;
-    font-size: 30px;
+    font-size: 20px;
     color: #ccc;   
 }
 .footer-sm-icon .fab {
     color: #f4f4f4;
 }
 .footer-sm-icon .fab:hover{
-    color: #f5f5f5;
+    color:  #968621;
     transition: ease-in 1s;
     overflow: hidden;
     border: none;
 }
-.contact-hotlines {
+footer.contact-hotlines {
     padding-bottom: 15px;
     margin-left: 0px;
     margin-top: 0;
     text-align: center;
 }
-.contact-footer h3 {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    padding-bottom: 0px;
+, .quick-links h3 {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 800;
+    padding-bottom: 3px;
     width: fit-content;
 }
 .contact-hotlines p{
@@ -732,7 +756,7 @@ footer #design {
     letter-spacing: 1px;
     padding: 0;
     margin:0;
-    font-size: 14px;
+    font-size: 12px;
 }
 .footer-text {
     display: flex;
@@ -750,7 +774,17 @@ footer #design {
     .footer-sm-icon {
         padding: 0 35%;
     }
-
+    .quick-links, .contact-footer {
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+        text-align: center;
+    }
+    .quick-links h3, .contact-footer h3 {
+        align-self: center;
+        justify-content: center;
+        text-align: center;
+    } 
 }
 @media (max-width: 780px){
     .footer-text {
