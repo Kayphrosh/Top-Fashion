@@ -127,7 +127,7 @@ a, a:active, a:hover, a:focus {
     background:#919191;
     font-size: 14px;
     align-content: center;
-    border-radius: 20px;
+    border-radius: 5px;
     cursor: pointer;
     overflow: hidden;
     box-sizing: border-box;
@@ -223,6 +223,7 @@ a, a:active, a:hover, a:focus {
     border-bottom: #968621 2px solid;
     padding-left: 20px;
     color: #968621;
+    transition: 1s ease-in;
 }
 
 .logo {
@@ -304,13 +305,13 @@ a, a:active, a:hover, a:focus {
     font-family: 'Encode Sans Condensed', sans-serif;
 }
 
+
 .sm {
     display: flex;
     justify-content: space-between;
-    /* margin-top: auto; */
+    margin-top: auto;
 }
 .sm .hub {
-    padding-top: 35px;
     padding-left: 5px;
     color: #ffffff;
 }
@@ -333,8 +334,7 @@ a, a:active, a:hover, a:focus {
     font-size: 25px;
     color: #919191;
     padding-right: 5px;
-    margin-top: 0px;
-    margin: none;
+    margin: 0;
     width: 100%;
 }
 .sm a:hover{
@@ -342,9 +342,10 @@ a, a:active, a:hover, a:focus {
 }
 .nav-sm {
     margin-top: 10px;
-    padding-left: 0px;
+    padding-left: 20px;
     font-size: 30px;
     text-align: center;
+    transition: 300ms ease-in;
 }
 .line {
     width: 30px;
@@ -413,15 +414,15 @@ transform: rotate(45deg) translate(-5px,-6px);
 
 @media screen  and (max-width: 800px){
     .showcase{
-        height: 100vh;
+        min-height: 100vh;
     }
     .send {
         padding: 15px 80px;
         border-radius: 5px;
     }
     .content {
+        margin-top: 30px;
         margin-left: 10px;
-        align-self: center;
         text-align: left;
     }
     .content h3 {
@@ -708,48 +709,63 @@ footer .quick-links {
     margin-bottom: 20px;
 }
 .links {
-    margin-top: 20px;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 10px;
 }
 .links a{
+    display: flex;
     color: #f4f4f4;
-    font-size: 12px;
-    margin-top: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+    width: fit-content;
 }
 .links a:hover {
     border-bottom: #968621 2px solid;
     padding-left: 20px;
     color: #968621;
+    transition: 1s ease-in;
 }
 .footer-sm-icon {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+
+    gap: 5px;
     padding: 0 20%;
     margin:  10px 0;
     width: 100%;
-    font-size: 20px;
+    font-size: 14px;
     color: #ccc;   
 }
-.footer-sm-icon .fab {
+.footer-sm-icon a{
     color: #f4f4f4;
+    align-items: center;
+    font-size: 16px;
+    width: fit-content;
 }
-.footer-sm-icon .fab:hover{
-    color:  #968621;
-    transition: ease-in 1s;
-    overflow: hidden;
-    border: none;
+.footer-sm-icon a:hover{
+    border-bottom: #968621 2px solid;
+    padding-left: 20px;
+    color: #968621;
+    transition: 1s ease-in;
 }
 footer.contact-hotlines {
-    padding-bottom: 15px;
+    padding-bottom: 0px;
     margin-left: 0px;
     margin-top: 0;
     text-align: center;
+    align-items: center;
 }
 .quick-links h3 {
     text-align: left;
     font-size: 16px;
     font-weight: 800;
-    padding-bottom: 3px;
     width: fit-content;
+}
+.contact-footer h3{
+    font-size: 16px;
+    font-weight: 800;
 }
 .contact-hotlines p{
     font-weight: 100;
@@ -771,11 +787,12 @@ footer.contact-hotlines {
     justify-content: center;
 }
 @media (min-width: 780px){
-    .footer-sm-icon {
-        padding: 0 35%;
+    .footer-sm-icon, footer .links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     .quick-links, .contact-footer {
-        justify-content: center;
         align-content: center;
         align-self: center;
         text-align: center;
@@ -785,6 +802,11 @@ footer.contact-hotlines {
         justify-content: center;
         text-align: center;
     } 
+    .links a{
+        margin: auto;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
 }
 @media (max-width: 780px){
     .footer-text {
