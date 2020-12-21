@@ -24,7 +24,7 @@ html {
 
 .alarm {
     font-family: 'Heebo', sans-serif;
-    color:#fff;
+    color:#ffffff;
     height: 100vh;
     background-image: url(./background.jpg);
     background-color: rgba(0, 0, 0, 0.7);
@@ -194,14 +194,13 @@ a, a:active, a:hover, a:focus {
 }
 .navbar{
     display: flex;
-    justify-content:center;
+    justify-content: space-around;
     flex-direction: column;
     transition: ease-in 1000ms;
     position: absolute;
     top: 0px;
     left: 0px;
     min-height: 100%;
-    height: 100vh;
     width: 450px;
     background-color:#000;
     clip-path: circle(10px at 90% -10%);
@@ -341,7 +340,6 @@ a, a:active, a:hover, a:focus {
     color: #ffffff;   
 }
 .nav-sm {
-    margin-top: 10px;
     padding-left: 20px;
     font-size: 30px;
     text-align: center;
@@ -366,12 +364,12 @@ a, a:active, a:hover, a:focus {
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
+    transition: all 2s ease .2s;
 }
 .navbar li {
     opacity: 0;
     overflow: hidden;
     align-self: center;
-    padding-top: 80px;
     transition: ease 2s;
 }
 .navbar li a{
@@ -381,19 +379,28 @@ a, a:active, a:hover, a:focus {
     overflow: hidden;
 }
 
-.navbar li :nth-child(1){
+.navbar li:nth-child(1){
+    margin-top: 50px;
     transition: all 0.5s ease 0.2s;
 }
-
-.navbar li :nth-child(2){
+.navbar li:nth-child(2){
     transition: all 0.5s ease 0.4s;
 }
-
-.navbar li :nth-child(3){
-    transition: all 0.5s ease 0.6s;
+.navbar li:nth-child(3){
+    transition: all 0.5s ease 0.8s;
+}
+.navbar li:nth-child(4) {
+    transition: all 0.5s ease 1.2s;
+}
+.navbar li:nth-child(5) {
+    transition: all 0.5s ease 1.6s;
+}
+.navbar li:nth-child(6) {
+    transition: all 0.5s ease 2.0s;
 }
 
 li.fade {
+
     opacity: 3;
 }
 
@@ -440,7 +447,6 @@ transform: rotate(45deg) translate(-5px,-6px);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
     align-self: center;
 }
 .model h2 {
@@ -540,7 +546,7 @@ transform: rotate(45deg) translate(-5px,-6px);
 .one {
     background:transparent;
     border-radius: 20px;
-    border: 2px rgb(105, 104, 104) solid;
+    border: 2px #69686859 solid;
     margin: 0px 0px;
     min-height:210px;
     width: 100%;
@@ -550,7 +556,7 @@ transform: rotate(45deg) translate(-5px,-6px);
     align-self: center;
     overflow: hidden;
     text-align: left;
-    box-shadow: 5px 5px 25px #ccc;
+    box-shadow: 5px 15px 25px #ccc;
     transition: slide-in 2s ease-in;
 }
 .one h2 {
@@ -611,25 +617,23 @@ transform: rotate(45deg) translate(-5px,-6px);
 /*--------------- END OF ABOUT SECTION ---------*/
 /*---------------- PRODUCTS SECTION -----------------*/
 .products {
+    font-family: 'Noto Sans JP', sans-serif;
     padding: 30px;
-    margin: 0px 0px;
+    margin: 0;
 }
 .products-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 10px;
     width: 100%;
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
     justify-items: center;
 }
 .img-container {
     background: #f4f4f4;
-    border-radius: 10px;
-    border: 3px rgb(105, 104, 104) solid;
-    margin: 0px 0px;
+    margin: 10px;
+    box-shadow: 0px 0px 15px 15px #86868654;
     height:fit-content;
-    width: 100%;
     max-width: 400px;
     
 }
@@ -645,30 +649,39 @@ transform: rotate(45deg) translate(-5px,-6px);
 }
 .card-icon {
     display: flex;
-    justify-content: space-between;
-    margin: 10px 20px;
-    color: #2b2b2c;
+    justify-content: flex-start;
+    gap: 30px;
+    margin: 10px 5px;
+    color: #000000;
     align-content: center;
     align-items: center;
+}
+.card-body span {
+    display: flex;
+
+    gap: 10px;
 }
 .card-icon:focus {
     color: red;
 }
-.card-body h4{
-    font-weight: 700;
-    font-size: 18px;
+.card-body p {
+    flex-basis: 70%;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 400;
 }
 .card-body h3{
-    font-weight: 400;  
-    text-align: left; 
-    font-size: 16px;
-    padding: 0px 5px;
+    margin-left: 5px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 20px;
 }
 .card-body h2{
+    flex-basis: 30%;
     font-weight: 700;
     padding-left: 5px;
-    font-size: 22px;
-    letter-spacing: 1.5px;
+    font-size: 18px;
+    letter-spacing: 1px;
     text-align: left;
 }
 .bag-btn {
@@ -676,7 +689,7 @@ transform: rotate(45deg) translate(-5px,-6px);
     border: none;
     outline: none;
     border-radius: 5px;
-    padding: 8px 10px;
+    padding: 8px 15px;
     cursor: pointer;
     color: #fff;
     align-self: center;
@@ -685,7 +698,7 @@ transform: rotate(45deg) translate(-5px,-6px);
     text-align: center;
 }
 .bag-btn:hover {
-    background-color: #e03b3b;
+    background-color: #bb0000;
 }
 .bag-btn .iconify {
     font-size: 16px;
@@ -1085,35 +1098,30 @@ form small {
 
 
 .btn-effect {
-    width: 60px; 
-    height: 35px;
+    width: 24px; 
+    height: 24px;
     outline: 0;
-    border: 2px solid #ccc;
+    border: none;
     color: #000;
     cursor: pointer;
     overflow: hidden;
     position: relative;
     display:flex;
-    justify-content: center;
-    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.05);
+    justify-content: left;
+    background-color: transparent;
+    align-items: center;
     transition: 1.5s cubic-bezier(.21,.04,.26,.99);
 }
 
 .btn-effect:hover {
-    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.2);
     border-color: var(--red);
 }
 
 .btn-like {
-    padding: 5px;
-    font-size: 1.4rem;
+    font-size:1.5rem;
     border-radius: 5px;
-    background: #fff;
+    background: transparent;
     transition: 1.5s cubic-bezier(.21,.04,.26,.99);
-}
-.btn-like.liked {
-    background: #0e0d26;
-    border-color: #0e0d26;
 }
 
 /*-- Button Icon -- */
