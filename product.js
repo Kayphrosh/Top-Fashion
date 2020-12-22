@@ -52,20 +52,19 @@ class UI {
                     <div class="card-body">
                         <span>
                         <h2>${product.title}</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit dolor sit amet consectetur. </p>
                         </span>
                         <h3>$${product.price}</h3>
-                        <div class="card-icon">
+                        <div class="card-icon"> 
+                            <button class="bag-btn" data-id=${product.id}><span class="iconify" data-icon="bi:cart-plus" data-inline="false"></span> Add to cart</button>
                             <button class="btn-effect btn-like">
                                 <span class="btn-icon btn--icon-default">
-                                <span class="iconify" data-icon="carbon:favorite-filled" data-inline="false"></span>
+                                    <span class="iconify" data-icon="carbon:favorite-filled" data-inline="false"></span>
                                 </span>
                                 <span class="btn-icon btn--icon-liked">
-                                <span class="iconify" data-icon="carbon:favorite-filled" data-inline="false"></span>
+                                    <span class="iconify" data-icon="carbon:favorite-filled" data-inline="false"></span>
                                 </span>
                             </button>
-                            <i class="fas fa-paper-plane" style="font-size: 1.5rem;"></i>
-                            <button class="bag-btn" data-id=${product.id}><span class="iconify" data-icon="bi:cart-plus" data-inline="false"></span> Add to cart</button>
                         </div>
                     </div> 
                 </div>   
