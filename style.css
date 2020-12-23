@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Heebo&family=Lobster&family=Noto+Sans&family=Noto+Sans+JP&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;800&display=swap');
 
 /* * {
     margin: 0;
@@ -272,6 +272,7 @@ a, a:active, a:hover, a:focus {
     align-self: center;
 }
 .content {
+    font-family: 'EB Garamond', serif;
     align-content: left;
     text-align: left;
     font-size: 20px;
@@ -282,10 +283,10 @@ a, a:active, a:hover, a:focus {
     margin-top: auto;
 }
 .content h1{
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'EB Garamond', serif;
     letter-spacing: 4px;
     font-size: 3rem;
-    font-weight: 900;
+    font-weight:800;
     color:#fff;
     overflow: hidden;
     width: fit-content;
@@ -298,8 +299,9 @@ a, a:active, a:hover, a:focus {
     padding: 0 10px;
     padding-right: 20%;
     letter-spacing: 0.5px;
-    font-size: 16px;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
 }
 
 
@@ -359,8 +361,8 @@ a, a:active, a:hover, a:focus {
     padding: 17px 20px;
 }
 .navbar.open {
-    clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
+    clip-path: circle(1100px at 90% -10%);
+    -webkit-clip-path: circle(1100px at 90% -10%);
     pointer-events: all;
     transition: all 2s ease .2s;
 }
@@ -419,10 +421,10 @@ transform: rotate(45deg) translate(-5px,-6px);
 
 @media screen  and (max-width: 800px){
     .showcase{
-        min-height: 100vh;
+        height: 100vh;
     }
     .send {
-        padding: 15px 50px;
+        padding: 15px 70px;
         border-radius: 5px;
     }
     .content {
@@ -431,7 +433,9 @@ transform: rotate(45deg) translate(-5px,-6px);
         text-align: left;
     }
     .content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        margin-bottom: 10px;
+        font-weight: 600;
     }
     .logo {
         left: 42%;
@@ -651,9 +655,9 @@ transform: rotate(45deg) translate(-5px,-6px);
 .card-icon {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: space-between;
     margin: 10px 20px;
-    height: 80px;
+    height: 75px;
     color: #000000;
     align-content: center;
     align-items: center;
@@ -664,6 +668,7 @@ transform: rotate(45deg) translate(-5px,-6px);
     justify-content: space-between;
     margin: 10px 10px;
 }
+
 .card-icon:focus {
     color: red;
 }
@@ -715,25 +720,25 @@ footer {
     padding: 20px 20px 0px 20px;
     align-content: center;
 }
-footer #design {
-    margin-top: 20px;
-    color: #b2d0f8;
-}
 .foot {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+footer #design {
+    margin-top: 20px;
+    color: #b2d0f8;
+}
 footer .quick-links {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin: 0px 0;
     align-items: center;
 }
 .links {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 20px;
     height: 100%; 
     width: 100%;
     padding: 0 20%;
@@ -746,8 +751,8 @@ footer .quick-links {
     overflow: hidden;
 }
 .links a:hover {
-    border-bottom: #968621 2px solid;
-    padding-left: 20px;
+    border-bottom: #968621 1px solid;
+    padding-left: 10px;
     color: #968621;
     transition: 200ms ease-in;
 }
@@ -755,15 +760,14 @@ footer .quick-links {
 .footer-sm-icon {
     display: flex;
     justify-content: space-between;
-    margin-top: 0px;
     height: 100%; 
     margin: 0 20%; 
 }
  .footer-sm-icon a{
     width: fit-content;
     color: #f4f4f4;
-    font-size: 22px;    
-    margin-top: 10px;
+    font-size: 24px;    
+    margin-top: 20px;
  }
 .footer-sm-icon a:hover{
     border-bottom: #968621 2px solid;
@@ -779,7 +783,7 @@ footer .quick-links {
     align-items: center;
 }
 .hotlines {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .quick-links h3, .contact-footer h3, .contact-hotlines h3 {
     align-items: center;
@@ -787,6 +791,7 @@ footer .quick-links {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 1px;
+    margin-top: 20px;
     width: 100%;
 }
 /* .contact-footer h3{
@@ -912,6 +917,9 @@ fas fa-window-close {
     margin-bottom: 2rem;
 
 }
+.check-out {
+    background-color: transparent;
+}
 
 /*  END OF CART SECTION */
 /*  CART FOOTER */
@@ -920,7 +928,12 @@ fas fa-window-close {
     letter-spacing: 2px;
     text-align: center;
 }
-
+.cart-footer .cart-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 125px;
+}
 .cart-footer h3{
     text-transform: capitalize;
     margin-bottom: 1rem;
