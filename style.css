@@ -924,6 +924,8 @@ fas fa-window-close {
 }
 .check-out {
     background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
 }
 
 /*  END OF CART SECTION */
