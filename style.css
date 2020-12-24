@@ -272,7 +272,6 @@ a, a:active, a:hover, a:focus {
     align-self: center;
 }
 .content {
-    font-family: 'EB Garamond', serif;
     align-content: left;
     text-align: left;
     font-size: 20px;
@@ -301,7 +300,6 @@ a, a:active, a:hover, a:focus {
     letter-spacing: 0.5px;
     font-weight: 400;
     font-size: 18px;
-    font-family: 'EB Garamond', serif;
 }
 
 
@@ -430,12 +428,17 @@ transform: rotate(45deg) translate(-5px,-6px);
     .content {
         margin-top: 30px;
         margin-left: 10px;
-        text-align: left;
+        text-align: center;
     }
     .content h1 {
-        font-size: 2rem;
+        font-size: 3rem;
         margin-bottom: 10px;
         font-weight: 600;
+        text-align: center;
+    }
+    .content p {
+        padding: 10px;
+        text-align: center;
     }
     .logo {
         left: 42%;
@@ -526,8 +529,8 @@ transform: rotate(45deg) translate(-5px,-6px);
 .about {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    margin: 20px;
     gap: 10px;
-    width: 100%;
     height: 100%;
     grid-column-gap: 1.5rem;
     grid-row-gap: 2rem;
@@ -562,7 +565,7 @@ transform: rotate(45deg) translate(-5px,-6px);
     align-self: center;
     overflow: hidden;
     text-align: left;
-    box-shadow: 5px 15px 25px #ccc;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.7);
     transition: slide-in 2s ease-in;
 }
 .one h2 {
@@ -606,17 +609,16 @@ transform: rotate(45deg) translate(-5px,-6px);
 }
 @media (max-width: 760px){
     #about {
-        padding: 20px;
+        padding: 10px;
         padding-bottom: 40px;
     }
     .one {
         width: 100%;
-        margin-bottom: 20px;
-        box-shadow: none;
     }
     .about {
         display: flex;
         flex-direction: column;
+        padding: 10px;
     }
 }
 
@@ -626,6 +628,9 @@ transform: rotate(45deg) translate(-5px,-6px);
     font-family: 'Noto Sans JP', sans-serif;
     padding: 30px;
     margin: 0;
+}
+.section-title {
+    font-family:  'Encode Sans Condensed', sans-serif;;
 }
 .products-container {
     display: grid;
