@@ -178,8 +178,7 @@ a, a:active, a:hover, a:focus {
     flex-direction: column; 
     justify-content: space-between;
     flex-basis: 33%;
-    width: 100%;
-    min-height: 90vh;  
+    width: 100%;  
 }
 .box-1 {
     display: flex;
@@ -475,7 +474,10 @@ transform: rotate(45deg) translate(-5px,-6px);
     opacity: 0.6;
     transition: 1s ease-in;
 }
-@media (min-width: 860px){
+@media (min-width: 760px){
+    .showcase {
+        min-height: 90vh;
+    }
     .content p{
         padding-right: 40%;
     }
@@ -494,7 +496,7 @@ transform: rotate(45deg) translate(-5px,-6px);
         object-fit: cover;
         object-position: center;
         width: 400px;
-        height: 400px;
+        height: 500px;
     }
 }
 @media (max-width: 760px){
