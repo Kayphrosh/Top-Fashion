@@ -337,10 +337,21 @@ a, a:active, a:hover, a:focus {
     color: #ffffff;   
 }
 .nav-sm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
     padding-left: 20px;
     font-size: 30px;
     text-align: center;
     transition: 300ms ease-in;
+}
+.nav-sm a{
+    margin: 12px 0px 0px 12px;
+}
+.nav-sm a:hover {
+    padding: 0;
+    border: none;
 }
 .line {
     width: 30px;
@@ -554,7 +565,7 @@ transform: rotate(45deg) translate(-5px,-6px);
     background:transparent;
     border-radius: 20px;
     border: 2px #69686859 solid;
-    margin: 0px 0px;
+    margin: 0px;
     min-height:210px;
     width: 100%;
     max-width:450px;
@@ -565,6 +576,12 @@ transform: rotate(45deg) translate(-5px,-6px);
     text-align: left;
     box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.7);
     transition: slide-in 2s ease-in;
+}
+.one.designer, .one.costs {
+    margin-right: 10px;
+}
+.one.philosophy {
+    margin-left: 10px;
 }
 .one h2 {
     text-align: right;
@@ -605,6 +622,11 @@ transform: rotate(45deg) translate(-5px,-6px);
         margin-bottom: 40px;
     }  
 }
+@media(max-width: 900px) {
+    #about {
+        padding: 10px 40px;
+    }
+}
 @media (max-width: 760px){
     #about {
         padding: 10px;
@@ -617,6 +639,12 @@ transform: rotate(45deg) translate(-5px,-6px);
         display: flex;
         flex-direction: column;
         padding: 10px;
+    }
+    .one.designer, .one.costs {
+        margin-right: 0px;
+    }
+    .one.philosophy {
+        margin-left: 0px;
     }
 }
 
@@ -1189,8 +1217,6 @@ form small {
 .btn-content {
     transition: transform 0.1s ease;
     display: inline-block;
-    /* position: absolute;
-    right: 0; */
 }
 .liked .btn-content {
     color: var(--white);
@@ -1207,115 +1233,4 @@ form small {
 .liked .btn-content--default {
     transform: translate(24px)
 }
-
-
-
-
-/* 
-body {
-    font-family: -apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,cantarell,helvetica neue,ubuntu,sans-serif;
-    overflow: hidden;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    padding: 20px;
-}
-.slider {
-    position: relative;
-    height: 600px;
-    width:  900px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.slides {
-    display: flex;
-    width: 500%;
-    height: 500px;
-    align-self: center;
-    text-align: center;
-    overflow: hidden;
-}
-.slide img{
-    overflow: hidden;
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    height: 500px;
-}
-.slides input {
-    display: none;
-}
-.slide {
-    width: 20%;
-    transition: 2s;
-    overflow: hidden;
-}
-.nav-manual {
-    position: absolute;
-    width: 800px;
-    gap: 40px;
-    margin-top: -80px;
-    margin-left: 40px;
-    display: flex;
-    justify-content: center;
-}
-.manual-btn {
-    border: 2px solid rgb(240, 0, 0);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-.manual-btn:hover {
-    background-color: brown;
-}
-#radio1:checked ~ .first{
-    margin-left: 0%;
-}
-#radio2:checked ~ .first{
-    margin-left: -20%;
-}
-#radio3:checked ~ .first{
-    margin-left: -40%;
-}
-#radio4:checked ~ .first{
-    margin-left: -60%;
-}
-
-.nav-auto {
-
-    bottom: 21%;
-    display: flex;
-    width: 800px;
-    justify-content: center;
-    margin: 40px;
-}
-@media (max-width: 760px) {
-    .nav-auto, .nav-manual{
-    }
-}
-.nav-auto div {
-    border: 2px solid #df5d5d;
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
-}
-.nav-auto div:not(:last-child){
-    margin-right: 40px;
-}
-#radio1:checked ~ .nav-auto .auto-btn1 {
-    background: chartreuse;
-}
-#radio2:checked ~ .nav-auto .auto-btn2 {
-    background: chartreuse;
-}
-#radio3:checked ~ .nav-auto .auto-btn3 {
-    background: chartreuse;
-}
-#radio4:checked ~ .nav-auto .auto-btn4 {
-    background: chartreuse;
-} */
-
 
